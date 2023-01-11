@@ -10,6 +10,12 @@
 <div class="btWrap">
     <a href="/community/insertPage" class="on">등록</a>
 </div>
+  <div class="head3">
+		<select id="selectBox" name="selectBox" onchange="if(this.value) location.href=(this.value);">
+	          <option>전체글</option>
+	          <option value="recommend" id="recommend">내가쓴글</option>
+          </select> 
+      </div>
 <div class="boardListWrap">
     <div class="boardLists">
         <div class="top">
@@ -22,7 +28,7 @@
         <c:forEach var='comList' items="${comList}">
             <div class="boardList">
                 <div id="listItem" class="num">${comList.num}</div>
-                <div id="listItem" class="title"><a href="">${comList.agName}</a></div>
+                <div id="listItem" class="title"><a href="/communi/listdetailView">${comList.agName}</a></div>
                 <div id="listItem" class="writer">${comList.memId}</div>
                 <div id="listItem" class="date">${comList.agDate}</div>
                 <div id="listItem" class="count">${comList.agCount}</div>
