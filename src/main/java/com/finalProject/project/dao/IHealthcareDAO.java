@@ -19,5 +19,6 @@ public interface IHealthcareDAO {
     public void createMyList(HashMap<String,Object> map);
     public void deleteMyList(HashMap<String,Object> map);
     public void deleteList(HashMap<String,Object> map);
+    
 
 }

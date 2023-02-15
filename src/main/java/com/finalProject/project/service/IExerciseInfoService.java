@@ -12,4 +12,6 @@ public interface IExerciseInfoService {
 	public ExerciseInfoVO detailViewRoutineInfo(String routineNo); // 상세 상품 조회
 	public ArrayList<HashMap<String,Object>> exVideoList(int pNum);
 	public void viewsExercise(String routineNo); // 조회수 카운트
+	public int saveMyList(HashMap<String,Object> map);
+	public void saveListCount(String routineNo);
 }

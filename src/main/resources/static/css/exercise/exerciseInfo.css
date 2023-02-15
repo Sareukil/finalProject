@@ -36,7 +36,7 @@ div.slogan {
 	}
 	
 .flex{
-	width:100%
+	width:100%;
 	margin-top:20px;
 	
 }
@@ -107,6 +107,17 @@ p{
 	margin:15px;
 	padding:0px 0px 0px 30px;
 	border:0.5px solid #2b5580;
+	display: flex;
+	align-items: center;
+}
+
+.rank_list li p{
+	padding: 0;
+	margin-right: 5%;
+}
+
+.rank_list li a{
+	color: #165495;
 }
 
 .exVideo_1 p{
@@ -117,23 +128,74 @@ p{
 
 .exItem{
 	display:flex;
-	padding:20px;
-	padding-top:40px;
+	margin:20px;
+	border-left: 3px solid #2b5580;
+	border-right: 3px solid #2b5580;
+	border-radius: 30px;
+	background-color: rgb(0 39 68 / 5%);
+	box-shadow: 0px 3px 3px 3px rgba(35, 35, 35, 0.556);
+}
+.itemImg{
+	width: 100px;
+	height: 100px;
+	margin-left: 3%;
+}
+.itemImgName{
+	width: 88%;
+}
+.itemText{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.exItem p{
+.itemText p{
+	margin: 0;
 	font-size:20px;
 	font-weight:normal;
+	margin-left: 1%;
 }
 
+.textName{
+	width: 56%;
+}
+.textName a{
+	font-size:30px;
+	font-weight:normal;
+	margin-left: 5%;
+	color: #165495;
+}
+.itemImgName hr{
+	margin: 0 3%;
+	margin-top: 20px;
+	border-color: #2b5580;
+}
+.itemPageCount{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.itemPageCount b{
+	font-size: 30px;
+	color: #2b5580;
+	margin-right: 1%;
+}
+
+.itemPageCount a{
+	font-size: 30px;
+	color: #2f649b;
+	margin-right: 1%;
+	cursor: pointer;
+}
 .ListBox{
-	margin-left:8%;
+	margin:0 8%;
 }
 
 
 .list a {
   position: relative;
-  //display:block;
+  /*display:block;*/
   height: 80px;
   width: 200px;
   margin: 10px 7px;

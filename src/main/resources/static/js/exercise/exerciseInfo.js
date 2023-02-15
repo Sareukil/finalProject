@@ -57,6 +57,22 @@ $('.triggerList').on('click', function() {
 });
 
 function exerciseRankList(pNum){
+	if(pNum == 1){
+		$('.weekRank').html("이번주 등 운동루틴 TOP5");
+	}
+	else if(pNum == 2){
+		$('.weekRank').html("이번주 어깨/목 운동루틴 TOP5");
+	}
+	else if(pNum == 3){
+		$('.weekRank').html("이번주 팔/다리 운동루틴 TOP5");
+	}
+	else if(pNum == 4){
+		$('.weekRank').html("이번주 허리 운동루틴 TOP5");
+	}
+	else{
+
+	}
+	
 	$.ajax({
         type:"post",
         url:"/exercise/exerciseRankList/"+pNum,
@@ -65,8 +81,13 @@ function exerciseRankList(pNum){
 			
             $('.rank_list ul').empty();
             let html = "";
+			let num = 1;
             $.each(result.exListR, function(k,v){
-                html += '<li><a href="/exercise/detailViewRoutineInfo/'+v.routineNo+'">'+v.routineName+'</a></li>'
+				console.log(v.routineCount);
+				html += '<li>'
+				html += '<p>'+num+"위"+'</p>'
+                html += '<a href="/exercise/detailViewRoutineInfo/'+v.routineNo+'">'+v.routineName+'</a></li>'
+				num++;
             })
             $('.rank_list ul').append(html);
         },
@@ -86,11 +107,23 @@ function exerciseItemList(pNum,num){
 			$('.itemPageCount').empty();
             let html = "";
 			let pageHtml = "";
+			console.log(result.exListI);
             $.each(result.exListI, function(k,v){
-                html += '<div class="exItem">';
-				html += '<img src="../../image/'+v.routineNo+'.png">';
-				html += '<p>'+v.routineName+'</p>';
-				html += '<hr/>';
+                html += '<div class="exItem"> ';
+				html += '<img class="itemImg" src="../../image/'+v.routineNo+'.png"><div class="itemImgName">';
+				html += '<div class="itemText"><p class="textName"><a href="/exercise/detailViewRoutineInfo/'+v.routineNo+'">'+v.routineName+'</a></p>';
+				if(v.routineOxy == 1)
+					html += '<p>유산소</p>';
+				else
+					html += '<p>무산소</p>';
+				if(v.routineMus == 1)
+					html += '<p>근육강화</p>';
+				else
+					html += '<p>근육이완</p>';
+				
+				html += '<p>'+"방문자:"+v.routineVisit+'</p>';
+				html += '<p>'+"저장:"+v.routineCount+'</p></div>';
+				html += '<hr/></div>';
 				html += '</div>';
 
 				
@@ -134,7 +167,9 @@ function exVideoList(pNum){
 			
             $('.slidesList-list').empty();
             let html = "";
+			
             $.each(result.exVideoList, function(k,v){
+				console.log(v.exStretchlink);
                 html += '<li class="slideList">';
 				html += '<iframe width="380" height="245" src="'+v.exStretchlink+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 				html += '<p>'+v.exStretchName+'</p>';

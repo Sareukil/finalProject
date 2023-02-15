@@ -34,8 +34,8 @@
 						<img src="<c:url value='/image/${routine.routineNo}.png'/>">
 				</div>
 				<div class="detail-routine">
-					<h2>#${routine.routineName}&nbsp&nbsp<button class=like>찜하기</button></h2> 
-					
+					<h2>#${routine.routineName}&nbsp&nbsp<button id="likeBt" class="like">찜하기</button></h2> 
+					<input id="routineNo" type="hidden" value="${routine.routineNo}">
 					<p>운동정보 : ${routine.routineInfo }</p>
 					<p>카테고리 : ${routine.routineCategory }</p>
 					<p>주의사항 : ${routine.routineWarn }</p>

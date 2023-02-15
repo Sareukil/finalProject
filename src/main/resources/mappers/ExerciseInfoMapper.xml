@@ -73,22 +73,6 @@
 
   <select id="exVideoList" parameterType="int" resultType="hashmap">
     SELECT * FROM exVideolist
-    <choose>
-      
-      <when test="pNum != null and pNum == 1">
-        WHERE exStretchCategory = "#등 #상체"
-        
-      </when>
-      <when test="pNum != null and pNum == 2">
-        WHERE exStretchCategory = "#어깨 #목"
-      </when>
-      <when test="pNum != null and pNum == 3">
-        WHERE exStretchCategory = "#팔 #다리"
-      </when>
-      <when test="pNum != null and pNum == 4">
-        WHERE exStretchCategory = "#허리"
-      </when>
-    </choose>
     ORDER BY RAND() desc LIMIT 10;
   </select>
 
@@ -97,4 +81,15 @@
     SET routineVisit = routineVisit+1
     WHERE routineNo = #{routineNo}
   </update>
+
+  <update id="saveMyList" parameterType="hashmap" >
+    INSERT IGNORE INTO exerciselist(memId, routineNo)
+    VALUES(#{memId},#{routineNo}); 
+  </update>
+  <update id="saveListCount" parameterType="string">
+    UPDATE detailInfo
+    SET routineCount = routineCount+1
+    WHERE routineNo = #{routineNo}
+  </update>
+
  </mapper>

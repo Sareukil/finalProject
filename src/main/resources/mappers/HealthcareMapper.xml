@@ -47,25 +47,25 @@
   </select>
 
   <select id="calendarMyList" parameterType="hashmap" resultType="hashmap">
-    SELECT eml.elMyNo, eml.myRoutine, eml.routineNo, eml.routineCK, eml.myRoutineDate, einfo.routineName
+    SELECT eml.elMyNo, eml.myRoutine, eml.routineNo, eml.routineCK, eml.myRoutineDate, dinfo.routineName
     FROM exercisemylist eml
-    INNER JOIN exerciseinfo einfo
-    ON eml.routineNo = einfo.routineNo
+    INNER JOIN detailinfo dinfo
+    ON eml.routineNo = dinfo.routineNo
     WHERE memId = #{memId} and
     Date(myRoutineDate) = #{date};
   </select>
 
   <select id="exerciseMyList" parameterType="string" resultType="hashmap">
-    SELECT elist.elNo, elist.routineNo, eInfo.routineName, eInfo.routineCategory, eInfo.recExercise1, eInfo.recExercise2, eInfo.recExercise3
+    SELECT elist.elNo, elist.routineNo, dinfo.routineName, dinfo.routineCategory, dinfo.recExercise1, dinfo.recExercise2, dinfo.recExercise3
     FROM exerciselist elist
-    INNER JOIN exerciseInfo eInfo
-    ON elist.routineNo = eInfo.routineNo
+    INNER JOIN detailinfo dinfo
+    ON elist.routineNo = dinfo.routineNo
     WHERE elist.memId = #{memId};
   </select>
 
   <select id="exerciseRecommendList" parameterType="hashmap" resultType="hashmap">
     SELECT routineNo, routineName, routineCategory, recExercise1, recExercise2, recExercise3
-    FROM exerciseinfo
+    FROM detailinfo
     <choose>
       
       <when test="oxy != null and (oxy == 0 and mus ==1)">

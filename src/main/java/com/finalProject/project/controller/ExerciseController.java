@@ -6,6 +6,7 @@ import java.util.HashMap;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.finalProject.project.model.PagerVO;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -48,6 +50,8 @@ public class ExerciseController {
 	public String exerciseItemList(@PathVariable int pNum,@PathVariable int num, Model model) {
 		PagerVO page = new PagerVO();
 		HashMap<String,Object> map = new HashMap<String,Object>();
+		page.setPostNum(5);
+		page.setPageNumCnt(5);
 		page.setNum(num);
 		page.setDataCount(service.itemListCount(pNum));  
 		map.put("displayPost", page.getDisplayPost());
@@ -111,7 +115,23 @@ public class ExerciseController {
 		return "exercise/detailRoutineInfo";
 	}
 	
-	
+	@ResponseBody
+	@RequestMapping("/exercise/detailViewRoutineInfo/like")
+	public String detailViewRoutineInfoLike(@RequestParam String routineNo,
+										Model model, HttpSession session) {
+		System.out.println(routineNo);
+		String memId = (String)session.getAttribute("sid");
+		HashMap<String,Object> map = new HashMap<String,Object>();
+		map.put("routineNo", routineNo);
+		map.put("memId", memId);
+		int boolInt = service.saveMyList(map);
+		String result = "fail";
+		if(boolInt == 1){
+			result = "success";
+			service.saveListCount(routineNo);
+		}
+		return result;
+	}
 
 	
 }

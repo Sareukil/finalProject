@@ -49,6 +49,19 @@ public class ExerciseInfoService implements IExerciseInfoService {
 		dao.viewsExercise(routineNo);
 		
 	}
+
+	@Override
+	public int saveMyList(HashMap<String, Object> map) {
+		
+		return dao.saveMyList(map);
+		
+	}
+
+	@Override
+	public void saveListCount(String routineNo) {
+		dao.saveListCount(routineNo);
+		
+	}
 	
 	
 
