@@ -22,7 +22,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="<c:url value='/css/member/login.css'/>">
 	
-	<script>
+	<!--<script>
 $(document).ready(function(){
  	$('#loginButton').on('click', function(){
  	//폼이 submit 되지 않도록 기본 기능 중단
@@ -52,7 +52,7 @@ $(document).ready(function(){
  	});// submit 종료
 });
 
-   </script>
+   </script>-->
 
 
 
