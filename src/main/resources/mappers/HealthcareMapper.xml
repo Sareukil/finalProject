@@ -49,7 +49,7 @@
   <select id="calendarMyList" parameterType="hashmap" resultType="hashmap">
     SELECT eml.elMyNo, eml.myRoutine, eml.routineNo, eml.routineCK, eml.myRoutineDate, dinfo.routineName
     FROM exercisemylist eml
-    INNER JOIN detailinfo dinfo
+    INNER JOIN detailInfo dinfo
     ON eml.routineNo = dinfo.routineNo
     WHERE memId = #{memId} and
     Date(myRoutineDate) = #{date};
@@ -58,14 +58,14 @@
   <select id="exerciseMyList" parameterType="string" resultType="hashmap">
     SELECT elist.elNo, elist.routineNo, dinfo.routineName, dinfo.routineCategory, dinfo.recExercise1, dinfo.recExercise2, dinfo.recExercise3
     FROM exerciselist elist
-    INNER JOIN detailinfo dinfo
+    INNER JOIN detailInfo dinfo
     ON elist.routineNo = dinfo.routineNo
     WHERE elist.memId = #{memId};
   </select>
 
   <select id="exerciseRecommendList" parameterType="hashmap" resultType="hashmap">
     SELECT routineNo, routineName, routineCategory, recExercise1, recExercise2, recExercise3
-    FROM detailinfo
+    FROM detailInfo
     <choose>
       
       <when test="oxy != null and (oxy == 0 and mus ==1)">

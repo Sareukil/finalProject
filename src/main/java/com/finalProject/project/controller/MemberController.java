@@ -62,7 +62,6 @@
 	public String loginCheck(@RequestParam HashMap<String, Object> param,
 												HttpSession session) {
 		// 로그인 체크 결과 
-		System.out.println("ddddd");
 	String result = service.loginCheck(param); // result : "success" 또는 "fail"
 	
 	
