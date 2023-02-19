@@ -60,7 +60,7 @@
    <select id="exLikeList" parameterType="String" resultType="hashmap">
 		SELECT el.elNo, el.routineCreateDate, el.routineNo, dinfo.routineName
     FROM exerciselist el
-    INNER JOIN detailinfo dinfo
+    INNER JOIN detailInfo dinfo
     ON el.routineNo = dinfo.routineNo
     WHERE memId = #{memId}
 	</select>
