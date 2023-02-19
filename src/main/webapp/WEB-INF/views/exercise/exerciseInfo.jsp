@@ -33,7 +33,7 @@
 					<li><a class="panel active">등/가슴</a></li>
 					<li><a class="panel">어깨/목</a></li>
 					<li><a class="panel">팔/다리</a></li>
-					<li><a class="panel">허리</a></li>
+					<li><a class="panel">허리/전신</a></li>
 					</ul>
 				</div>
 			</div>
@@ -67,20 +67,21 @@
 				
 			</div>
 		</div>
-		
+		<div class="Stretch_common">
+		<p>추천 스트레칭 영상(공용)</p>
+		</div>
 		<article class="exVideoList">
+		
 						<div class="triggerList trigger-left">
 							<img class="slideListImg" src="<c:url value='/image/healthcare/left.png'/>">
 						</div>
+						
 						<div id="listSlider1" class="listSlider">
+						
 							<div class="viewportList">
+							
 								<ul class="slidesList-list">
-								<c:forEach var='exVideolist' items="${list}">
-									<li class="slideList"><iframe width="380" height="245" src="${exVideolist.exVideolink }" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-										
-										<p>${exVideolist.exVideoName }</p>
-									</li>
-								</c:forEach>
+								
 								</ul>
 							</div>
 						</div>

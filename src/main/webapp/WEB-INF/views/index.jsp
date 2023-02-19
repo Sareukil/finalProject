@@ -14,7 +14,7 @@
 <script src="<c:url value='/js/index.js'/>"></script>
 
 <!-- 카카오 지도 스타일 -->
-
+<c:import url="/WEB-INF/views/chatbot/chatModal.jsp" />
 
 </head>
 <body>
@@ -63,52 +63,64 @@
 		</c:if>
 
 		<div class="text">아래로 스크롤 해주세요!</div>
-
+		<div id="chatBotDiv">
+			<a data-toggle="modal" data-target="#modal" role="button"
+				class="btn btn-big openmodale"><img class="chatbot_img" src="<c:url value='/image/chatBot.png'/>" id="chatBot"></a>
+		</div>
 	</div>
 
 	<div class="menu">
 		<div class="menu_text">Contents</div>
 
-		<div class="left_menu_box"></div>
 		<div class="right_menu_box">
 
 			<div class="button_box_top">
-				<input type="button" class="box" value="운동"
+				<input type="button" class="box1" value="운동"
 					onClick="location.href='<c:url value='/exercise/exerciseInfo'/>'">
-				<input type="button" class="box" value="영양제"
+				<input type="button" class="box2" value="영양제"
 					onClick="location.href='<c:url value='/spm/listSupplement'/>'">
 			</div>
 
 			<div class="button_box_bottom">
-				<input type="button" class="box" value="건강 알리미"
-				onClick="location.href='<c:url value='/community/healthcare'/>'">
-			<input type="button" class="box" value="커뮤니티"
-				onClick="location.href='<c:url value='/community/list/${num=1}'/>'">
+				<input type="button" class="box3" value="건강 알리미"
+					onClick="location.href='<c:url value='/community/healthcare'/>'">
+				<input type="button" class="box4" value="커뮤니티"
+					onClick="location.href='<c:url value='/community/list/${num=1}'/>'">
+
 			</div>
 
-			<!-- 
-			<div class="right_menu_box_top">
-				
-			</div>
-			<div class="right_menu_box_bottom">
 			
-				</div>-->
 		</div>
 	</div>
 
 	<div class="image2"></div>
-	<div>
-		<div class="map_box_left">
+	<div class="map_api">
+		<div class="menu_text">집 근처 편의시설 찾기</div>
 
+		<!-- 지도 -->
+		<div class="map_wrap">
 			<div id="map"
 				style="width: 100%; height: 100%; position: relative; overflow: hidden;"></div>
 
+			<div id="menu_wrap" class="bg_white">
+				<div class="option">
+					<div>
+						<form onsubmit="searchPlaces(); return false;">
+							키워드 : <input type="text" value="강남 병원" id="keyword" size="15">
+							<button type="submit">검색하기</button>
+						</form>
+					</div>
+				</div>
+				<hr>
+				<ul id="placesList"></ul>
+				<div id="pagination"></div>
+			</div>
 		</div>
-
-		<!-- 지도 api javascript -->
-
-		<script type="text/javascript"
-			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=72bd43e207ace7b4adbc2a7f9e8860e9&libraries=services"></script>
+		
+		<!-- 지도 app key -->
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=72bd43e207ace7b4adbc2a7f9e8860e9&libraries=services"></script>
+		
+		<!-- 지도 javascript -->
 		<script>
 // 마커를 담을 배열입니다
 var markers = [];
@@ -328,33 +340,13 @@ function removeAllChildNods(el) {
 }
 </script>
 
-
-
-
-
-
-
-
-		<div class="map_box_right">
-			<div class="map_wrap">
-				<div id="map"
-					style="width: 100%; height: 100%; position: relative; overflow: hidden;"></div>
-
-				<div id="menu_wrap" class="bg_white">
-					<div class="option">
-						<form onsubmit="searchPlaces(); return false;">
-							키워드 : <input type="text" value="이태원 맛집" id="keyword" size="10">
-							<button type="submit">검색하기</button>
-						</form>
-					</div>
-					<hr>
-					<ul id="placesList"></ul>
-					<div id="pagination"></div>
-				</div>
-			</div>
-		</div>
-
 	</div>
+
+
+
+
+
+
 	<div class="image3">
 		<div class="footer_box">
 			주소 : 서울 특별시 서초구</br> 대표자 : 박정훈</br> 전화번호 : 02-000-0000</br> COPYRIGHT © 2023 나도

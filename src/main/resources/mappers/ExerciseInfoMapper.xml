@@ -86,6 +86,7 @@
     INSERT IGNORE INTO exerciselist(memId, routineNo)
     VALUES(#{memId},#{routineNo}); 
   </update>
+  
   <update id="saveListCount" parameterType="string">
     UPDATE detailInfo
     SET routineCount = routineCount+1

@@ -22,7 +22,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="<c:url value='/css/member/login.css'/>">
 	
-	<!--<script>
+	<script>
 $(document).ready(function(){
  	$('#loginButton').on('click', function(){
  	//폼이 submit 되지 않도록 기본 기능 중단
@@ -38,7 +38,7 @@ $(document).ready(function(){
  			dataType:'text',
  			success:function(result){
  				if(result == "success"){
- 				alert("로그인 성공");
+               
  					location.href="/";
  				}else{
  					alert("아이디 또는 비밀번호가 일치하지 않습니다.");
@@ -52,7 +52,7 @@ $(document).ready(function(){
  	});// submit 종료
 });
 
-   </script>-->
+   </script>
 
 
 
@@ -67,11 +67,9 @@ $(document).ready(function(){
                <div class="container">
                   <div class="label-login"></div>
 
-                  <div class="image-left">
-                     <div class="image-L"></div>
-                  </div>
-                  <div class="image-right">
-                     <div class="image-R"></div>
+                  <div class="login_text">
+                   로 그 인
+                  
                   </div>
 
                   <div class="login-form">
@@ -113,5 +111,7 @@ $(document).ready(function(){
 
 
 </body>
+
+
 
 </html>

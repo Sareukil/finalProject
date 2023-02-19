@@ -1,6 +1,7 @@
 package com.finalProject.project.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -28,6 +29,11 @@ public class SpmService implements ISpmService {
 	@Override
 	public ArrayList<spmVO> efflistSpm(String spmEffCtg) {
 		return dao.efflistSpm(spmEffCtg);
+	}
+
+	@Override
+	public int savespmList(HashMap<String, Object> map) {
+		return dao.savespmList(map);
 	}
 
 

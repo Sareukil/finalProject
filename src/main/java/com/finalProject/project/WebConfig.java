@@ -15,6 +15,12 @@ public class WebConfig implements WebMvcConfigurer{
 		
 		registry.addResourceHandler("/audio/**")
 		.addResourceLocations("file:///C:/springWorkspace/upload/");
+		
+		/* registry.addResourceHandler("/images/**")
+			.addResourceLocations("file:///usr/local/project/upload/");
+			
+			registry.addResourceHandler("/audio/**")
+			.addResourceLocations("file:///usr/local/project/upload/");*/
     }
 
     

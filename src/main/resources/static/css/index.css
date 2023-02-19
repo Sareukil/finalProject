@@ -7,24 +7,25 @@
 	font-style: normal;
 }
 
-div {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	
-}
-
 .image1 {
 	background: url('../image/indexbg1.png') no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	opacity: 0.8;
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
 .image2 {
-	background: url('../image/indexpicture.png') no-repeat;
+	background:
+		url('https://mblogthumb-phinf.pstatic.net/MjAyMDA0MjVfOTMg/MDAxNTg3Nzk4NTY5MDcw.xZQ_wk_G-5kWJNEFZM-d6EUffyRlW7ggHu_GWO-Mu4Ig.gDsmuLNV-T2ASGz9P4Fboklok2lCPnMRMHJ0s30WE2Ug.PNG.ichufs/%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84_%ED%94%BC%EB%A0%8C%EC%B2%B4_%EB%AF%B8%EC%BC%88%EB%9E%80%EC%A0%A4%EB%A1%9C_%EC%96%B8%EB%8D%95%EC%97%90%EC%84%9C_%ED%95%A8%EA%BB%98_%EB%85%B8%EC%9D%84%EC%9D%84_%EB%B3%B4%EB%8B%A4.png?type=w800')
+		no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
 .image3 {
@@ -32,6 +33,9 @@ div {
 '../image/index1.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
 .main_text {
@@ -40,7 +44,7 @@ div {
 	align-items: center;
 	text-align: center;
 	font-size: 100px;
-	font-weight:bold;
+	font-weight: bold;
 	height: 200px;
 	font-family: 'InkLipquid';
 }
@@ -53,6 +57,18 @@ div {
 	height: 50px;
 	font-family: 'InkLipquid';
 	font-size: 30px;
+}
+
+.menu {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.map_api {
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
 .member_button {
@@ -107,6 +123,7 @@ div {
 	text-align: center;
 	font-family: 'InkLipquid';
 	font-size: 30px;
+	height: 100px;
 }
 
 .map_box {
@@ -121,88 +138,113 @@ div {
 	height: 400px;
 }
 
-.menu{
+.menu {
 	background-color: #F3CF98;
 }
 
-.menu_text{
+.menu_text {
 	text-align: center;
 	font-family: 'InkLipquid';
 	font-size: 100px;
-	font-weight:bold;
-	height:200px;
+	font-weight: bold;
+	height: 200px;
 	background-color: #F3CF98;
 }
 
-.left_menu_box{
-	width:50%;
-	float:left;
-}
-
 .right_menu_box {
-	width:50%;
-	height:70%;
-	float:right;
+	height: 70%;
 }
 
-.button_box_top{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
-	height:50%;
+.button_box_top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50%;
 }
 
-.button_box_bottom{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
-	height:50%;
-}
-
-.right_menu_box_top{
-	
-	height:100%;
-}
-
-.right_menu_box_bottom{
-	height:100%;
+.button_box_bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50%;
 }
 
 .map_box_left {
 	background-color: #F3CF98;
 	float: left;
 	width: 50%;
-	
 }
 
-.map {
-	width: 100%;
-	height: 969px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.map_box_right {
-	background-color: #F3CF98;
-	float: right;
-	width: 50%;
-}
-
-.box {
-	width: 250px;
-	height: 250px;
+.box1 {
+	width: 600px;
+	height: 300px;
 	border: 3px solid;
-	margin:0 50px;
-	border:0;
+	margin: 0 50px;
+	border: 0;
 	font-family: 'InkLipquid';
-	font-size:50px;
+	font-size: 50px;
 }
 
-.box.box:hover{
-	background-color: #F3CF98;
+.box1.box1:hover {
+	background:
+		url('https://health.chosun.com/site/data/img_dir/2020/12/18/2020121801715_0.jpg')
+		no-repeat;
+	background-size: cover;
+}
+
+.box2 {
+	width: 600px;
+	height: 300px;
+	border: 3px solid;
+	margin: 0 50px;
+	border: 0;
+	font-family: 'InkLipquid';
+	font-size: 50px;
+}
+
+.box2.box2:hover {
+	background:
+		url('http://cdn.monews.co.kr/news/photo/202206/313295_82232_2015.jpg')
+		no-repeat;
+	background-size: cover;
+}
+
+.box3 {
+	width: 600px;
+	height: 300px;
+	border: 3px solid;
+	margin: 0 50px;
+	border: 0;
+	font-family: 'InkLipquid';
+	font-size: 50px;
+}
+
+.box3.box3:hover {
+	background: url('../image/indexpicture.png') no-repeat;
+	background-size: cover;
+}
+
+.box4 {
+	width: 600px;
+	height: 300px;
+	border: 3px solid;
+	margin: 0 50px;
+	border: 0;
+	font-family: 'InkLipquid';
+	font-size: 50px;
+}
+
+.box4.box4:hover {
+	background:
+		url('https://mblogthumb-phinf.pstatic.net/MjAxODA0MTZfNDMg/MDAxNTIzODY3OTUwMzk5.4RJpbOLIHXySrBRmVvpfpwaBaeoCSol3bmILuFlmjBog.W8N581D-AT6vGa4hwhcuWLKbOCQEGdiGDFnPkgk1E-wg.JPEG.raonato2017/1.jpg?type=w800')
+		no-repeat;
+	background-size: cover;
+}
+
+.map_api {
+	background: #F3CF98;
 }
 
 .footer_box {
@@ -212,6 +254,34 @@ div {
 	background-color: #F3CF98;
 	text-align: center;
 	font-size: 12px;
+	width: 100%;
+}
+
+/*수정*/
+.chatbot_img {
+	background: url('../image/chatBot.png') no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	float: right;
+}
+
+#chatBot {
+	margin-top: 11px;
+	width: 40px;
+	margin-right: 9px;
+	height: 40px;
+}
+
+#chatBotDiv {
+	width: 60px;
+	height: 60px;
+	background-color: #F3CF98;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	position: absolute;
+	top: 50px;
+	left: 20px;
 }
 
 /* 지도 css*/
@@ -229,8 +299,9 @@ div {
 
 .map_wrap {
 	position: relative;
-	width: 100%;
-	height: 500px;
+	width: 90%;
+	height: 700px;
+	margin-left:5%;
 }
 
 #menu_wrap {

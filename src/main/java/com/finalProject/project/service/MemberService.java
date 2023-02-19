@@ -1,6 +1,7 @@
 package com.finalProject.project.service;
 
 import java.util.HashMap;
+import java.util.ArrayList;
 
 import org.apache.ibatis.javassist.compiler.ast.Member;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -106,6 +107,19 @@ public class MemberService implements IMemberService {
 	public void modifymemPw(HashMap<String,Object>map) {
 		dao.modifymemPw(map);
 	}
+
+	@Override
+	public ArrayList<HashMap<String,Object>> exLikeList(String memId){
+		
+		return dao.exLikeList(memId);
+	}
+
+	@Override
+	public ArrayList<HashMap<String,Object>> spLikeList(String memId){
+		
+		return dao.spLikeList(memId);
+	}
+
 
 
 

@@ -1,7 +1,7 @@
 package com.finalProject.project.service;
 
 import java.util.HashMap;
-
+import java.util.ArrayList;
 import org.apache.ibatis.javassist.compiler.ast.Member;
 
 import com.finalProject.project.model.MemberVO;
@@ -16,6 +16,8 @@ public interface IMemberService {
 	
 	public void deletemember(String memId); // 회원 탈퇴
 	public void modifymemPw(HashMap<String,Object>map); // 비번 변경
+	public ArrayList<HashMap<String,Object>> exLikeList(String memId);
+	public ArrayList<HashMap<String,Object>> spLikeList(String memId);
 	
 	
 

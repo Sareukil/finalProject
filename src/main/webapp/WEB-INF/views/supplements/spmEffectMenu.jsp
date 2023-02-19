@@ -52,47 +52,47 @@
 						<span class="icon"></span>
 						<span class="txt">눈 건강</span></div></a>
 						
-						<a href="#" class="health-one fat"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/fat'/>" class="health-one fat"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">체지방</span></div></a>
 						
-						<a href="#" class="health-one blood"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/blood'/>" class="health-one blood"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">혈액 & 혈액순환</span></div></a>
 						
-						<a href="#" class="health-one liver"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/liver'/>" class="health-one liver"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">간 건강</span></div></a>
 						
-						<a href="#" class="health-one gut"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/gut'/>" class="health-one gut"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">장 건강</span></div></a>
 						
-						<a href="#" class="health-one stress"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/stress'/>" class="health-one stress"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">스트레스 & 수면</span></div></a>
 						
-						<a href="#" class="health-one imm"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/imm'/>" class="health-one imm"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">면역 기능</span></div></a>
 						
-						<a href="#" class="health-one bone"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/bone'/>" class="health-one bone"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">뼈 건강</span></div></a>
 						
-						<a href="#" class="health-one aging"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/aging'/>" class="health-one aging"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">노화 & 항산화</span></div></a>
 						
-						<a href="#" class="health-one bp"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/bp'/>" class="health-one bp"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">혈압</span></div></a>
 						
-						<a href="#" class="health-one bs"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/bs'/>" class="health-one bs"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">혈당</span></div></a>
 						
-						<a href="#" class="health-one joint"><div class="itxt">
+						<a href="<c:url value='/spm/spmlist/joint'/>" class="health-one joint"><div class="itxt">
 						<span class="icon"></span>
 						<span class="txt">관절 건강</span></div></a>
 						

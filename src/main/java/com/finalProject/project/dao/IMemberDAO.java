@@ -1,6 +1,7 @@
 package com.finalProject.project.dao;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.apache.ibatis.annotations.Param;
@@ -20,8 +21,8 @@ public interface IMemberDAO {
 	public void deletemember(String memId); // 회원 탈퇴
 	 // 비번 변경
 	public void modifymemPw(HashMap<String, Object> map);
-	
-	
+	public ArrayList<HashMap<String,Object>> exLikeList(String memId);
+	public ArrayList<HashMap<String,Object>> spLikeList(String memId);
 	
 	
 

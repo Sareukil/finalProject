@@ -28,6 +28,7 @@
  	display:inline-block;
  	width:80%;
  	height:100%;
+ 	color:black;
  }
  
 .product-card {
@@ -92,7 +93,6 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
-  color: #fff;
 }
 ul.sidebar-menu {
     margin: 10px 0px 0px 0px;
@@ -250,12 +250,30 @@ li.active.have-children span::after {
     background-size: 105px 105px;
 }
 
+/*--------------------------spmDetail-----------------------------*/
+
+.spmA{
+	color:black;
+}
+
+.heart-icon rect{
+  clip-path:url('#heart-path');
+}
 
 
 
+.icon{
+  width:50px;
+  height:50px;
+  cursor:pointer;
+  fill: #ccc;
+  
+}
 
 
-
+.icon:hover{
+  fill: red;
+}
 
 
 

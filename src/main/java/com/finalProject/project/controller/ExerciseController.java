@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.finalProject.project.model.PagerVO;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.finalProject.project.model.ExerciseInfoVO;
 import com.finalProject.project.service.ExerciseInfoService;
 

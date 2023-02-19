@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
+	 font-family: 'OTWelcomeRA';
  margin: 0; 
  padding: 0; 
  list-style: none; 
@@ -31,25 +39,27 @@ div.slogan {
  
 .tab{
 	text-align:center;
-	padding:50px;
+	padding:55px;
 
 	}
 	
 .flex{
 	width:100%;
-	margin-top:20px;
+	margin-top:25px;
 	
 }
 .list li{
 	display:inline-block;
-	font-size:25px;
-	padding:5px;
+	font-size:30px;
+	padding:10px;
+	line-height:2px;
+
 
 }
 
 .panel{
 	border:1.5px solid #2b5580;
-	padding:15px;
+	padding:20px;
 	padding-left:40px;
 	padding-right:40px;
 	cursor:pointer;
@@ -126,6 +136,7 @@ p{
 }
 
 
+
 .exItem{
 	display:flex;
 	margin:20px;
@@ -199,13 +210,13 @@ p{
   height: 80px;
   width: 200px;
   margin: 10px 7px;
-  padding:20px;
+  padding:30px;
 	padding-left:50px;
 	padding-right:50px;
 	color:#2b5580;
   font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 25px;
+  letter-spacing: 3px;
 
   border: 1.5px #2b5580 solid;
   border-radius: 4px;
@@ -241,5 +252,3 @@ p{
 .panel:hover:before {
   top: 0;
 }
-
-

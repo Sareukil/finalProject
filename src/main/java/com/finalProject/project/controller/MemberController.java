@@ -4,6 +4,7 @@
 	
 	
 	
+	import java.util.ArrayList;
 	import java.util.HashMap;
 	
 	import javax.servlet.http.HttpSession;
@@ -62,6 +63,7 @@
 	public String loginCheck(@RequestParam HashMap<String, Object> param,
 												HttpSession session) {
 		// 로그인 체크 결과 
+		System.out.println("ddddd");
 	String result = service.loginCheck(param); // result : "success" 또는 "fail"
 	
 	
@@ -219,7 +221,19 @@
 				             return resuit;
 							}
 					
-		
+		@RequestMapping("/member/likes")
+		public String likes(HttpSession session, Model model) {
+			String memId = (String)session.getAttribute ("sid");
+			ArrayList<HashMap<String,Object>> exList = new ArrayList<HashMap<String,Object>>();
+			ArrayList<HashMap<String,Object>> spList = new ArrayList<HashMap<String,Object>>();
+
+			exList = service.exLikeList(memId);
+			spList = service.spLikeList(memId);
+
+			model.addAttribute("exList", exList);
+			model.addAttribute("spList", spList);
+			return "member/likes";
+		}
 					
 	}
 		

@@ -49,18 +49,18 @@
 				<hr>
 				<br>
 			   <c:forEach var="spm" items="${spmList }">
-			   	<a href="<c:url value='/supplements/spmDetail/{spmName}' />">
+			   	<a href="<c:url value='/supplements/spmDetail/${spm.spmName}' />">
 				   <div class="product-card">
 				   		<div class="product-tumb">
 				   			<img src="<c:url value='/images/${spm.spmImg }'/>">
 				   		</div>
 				   		<div class="product-details">
-				   			<h4><a href="<c:url value='/supplements/spmDetail/{spmName}' />">${spm.spmName }</a></h4>
+				   			<h4><a href="<c:url value='/supplements/spmDetail/${spm.spmName}' />">${spm.spmName }</a></h4>
 				   			<p>${spm.spmEffect }</p>
 				   		</div>
 				   	</div>
+				   	</a>
 			   </c:forEach>
-			   	</a>
 			   </div>
    
 			   

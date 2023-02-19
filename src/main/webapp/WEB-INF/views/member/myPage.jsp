@@ -44,6 +44,7 @@
 				<div class="myPage-main-container">
 					<div class="myPage-main-container-header">
 						<h3>나의 개인정보</h3>
+						<hr>
 					</div>
 				</div>
 

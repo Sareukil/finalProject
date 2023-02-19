@@ -56,4 +56,21 @@
    set memPw=#{newmemPw}
    WHERE memId = #{memId}
    </update>
+  <!-- 찜하기 -->
+   <select id="exLikeList" parameterType="String" resultType="hashmap">
+		SELECT el.elNo, el.routineCreateDate, el.routineNo, dinfo.routineName
+    FROM exerciselist el
+    INNER JOIN detailinfo dinfo
+    ON el.routineNo = dinfo.routineNo
+    WHERE memId = #{memId}
+	</select>
+
+  <select id="spLikeList" parameterType="String" resultType="hashmap">
+		SELECT sl.spNo, sl.spmCreateDate, sl.spmName, spms.spmName
+    FROM spmlist sl
+    INNER JOIN supplements spms
+    ON sl.spmName = spms.spmName
+    WHERE memId = #{memId}
+	</select>
+
   </mapper>

@@ -21,10 +21,6 @@ public class ExerciseInfoVO {
 	private String recExercise1;
 	private String recExercise2;
 	private String recExercise3;
-	private String routineOxy;
-	private String routineMus;
-	private String routineVisit;
-	private String routineCount;
 
 
 	public String getExVideoNo() {
@@ -162,38 +158,5 @@ public class ExerciseInfoVO {
 	public void setRecExercise3(String recExercise3) {
 		this.recExercise3 = recExercise3;
 	}
-
-	public String getRoutineOxy() {
-		return this.routineOxy;
-	}
-
-	public void setRoutineOxy(String routineOxy) {
-		this.routineOxy = routineOxy;
-	}
-
-	public String getRoutineMus() {
-		return this.routineMus;
-	}
-
-	public void setRoutineMus(String routineMus) {
-		this.routineMus = routineMus;
-	}
-
-	public String getRoutineVisit() {
-		return this.routineVisit;
-	}
-
-	public void setRoutineVisit(String routineVisit) {
-		this.routineVisit = routineVisit;
-	}
-
-	public String getRoutineCount() {
-		return this.routineCount;
-	}
-
-	public void setRoutineCount(String routineCount) {
-		this.routineCount = routineCount;
-	}
-
 	
 }
