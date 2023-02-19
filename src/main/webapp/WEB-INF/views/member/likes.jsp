@@ -65,15 +65,6 @@
 										<div class="exListName">${exList.routineName}</div>
 									</div>
 								</li>
-								<li>
-									snfjksaf
-								</li>
-								<li>
-									snfjksaf
-								</li>
-								<li>
-									snfjksaf
-								</li>
 								</c:forEach>
 							</ul>
 
@@ -81,16 +72,6 @@
 						
 						<div class="saveSupplementsList"><div class=SE_text>영양제</div>
 							<ul>
-								<li>
-									snfjksaf
-								</li>
-								<li>
-									snfjksaf
-								</li>
-								<li>
-									snfjksaf
-								</li>
-							
 								<c:forEach var='spList' items="${spList}">
 								<li>
 									

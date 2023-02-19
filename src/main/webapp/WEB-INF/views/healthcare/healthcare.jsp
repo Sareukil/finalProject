@@ -89,15 +89,6 @@
 					<div id="todayDiv">
 						<p id="todayDivName">오늘의 운동</p>
 						<ul id="todayList">
-							<li>
-								<div>08:56</div>
-								<div>내용내용내용내용내용</div>
-								<div style="color: rgb(91, 125, 238);">X</div>
-							</li>
-							<li>오늘 뭐하지 뭐하지</li>
-							<li>오늘 뭐하지 뭐하지</li>
-							<li>오늘 뭐하지 뭐하지</li>
-							<li>오늘 뭐하지 뭐하지</li>
 						</ul>
 					</div>
 				</div>
@@ -273,22 +264,6 @@
 						</div>
 						<div id="listItem">
 							<ul class="listItemUl">
-								<li class="listItemLi">
-									<div class="routineItemBt">
-										<a><img src="<c:url value='/image/healthcare/checkX.png'/>"></a>
-									</div>
-									<div id="routineItemName" class="itemName">운동이름운동이름운동이름운동이름운동이름운동이름</div>
-									<div id="routineItemTime" class="itemTime">오후 18:54</div>
-									<div id="routineItemRoutine" class="itemRoutine"></div>
-								</li>
-								<li>
-									<div class="routineItemBt">
-										<img src="<c:url value='/image/healthcare/checkX.png'/>">
-									</div>
-									<div id="routineItemName" class="itemName">운동이름운동이름운동이름운동이름운동이름운동이름</div>
-									<div id="routineItemTime" class="itemTime">오후 18:54</div>
-									<div id="routineItemRoutine" class="itemRoutine"></div>
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -301,8 +276,6 @@
 							<input class="radioBt" type="radio" name='choice' value="recommend"/>추천
 						</form>
 						<div id="exerciseTag">
-							<p class="tagItem">유산소</p>
-							<p class="tagItem">근육강화</p>
 						</div>
 							
 					</div>
@@ -318,44 +291,7 @@
 						<div class="exerciseListSlide">
 							<div class="viewport">
 								<ul class="slideList">
-									<li class="slide">
-										<div class="slideListDivView">
-											<div class="listItemName">name</div>
-											<div class="listItemType">type</div>
-											<div class="listItemBtDiv">
-												<button class="listItemInputBt">운동예약</button>
-												<button class="listItemRemoveBt">삭제</button>
-											</div>
-										</div>
-										<div class="slideListDivInput">
-											<form id="listSubmitForm" class="listSubmitForm">
-												<div class="datepicker">
-													<input type="text" class="routineDate" name="trip-start">
-													<input type="time" class="routineTime" name="routineTime" required>
-												</div>
-												<input type="text" id="routineInput" name="routineInput" placeholder="운동루틴을 입력하세요.">
-												<input type="submit" id="routineInputBt" class="routineInputBt" value="예약">
-												<input type="button" id="routineCancelBt" class="routineCancelBt" value="취소">
-											</form>
-											<div class="exRoutine">
-												<div class="exRoutineNameDiv">
-													<p class="exRoutineText">운동루틴 ex)</p>
-												</div>
-												<div class="exRoutineTextDiv">
-													<p class="exRoutineText">1번: 운동루틴운동루틴운동루틴운동루틴</p>
-													<p class="exRoutineText">1번: 운동루틴운동루틴운동루틴운동루틴</p>
-													<p class="exRoutineText">1번: 운동루틴운동루틴운동루틴운동루틴</p>
-													<p class="exRoutineText">1번: 운동루틴운동루틴운동루틴운동루틴</p>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="slide">2</li>
-									<li class="slide">3</li>
-									<li class="slide">4</li>
-									<li class="slide">5</li>
-									<li class="slide">6</li>
-									<li class="slide">7</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -368,3 +304,32 @@
 		</div>
 	</body>
 </html>
+
+<!--<li class="slide">
+	<div class="slideListDivView">
+		<div class="listItemName">name</div>
+		<div class="listItemType">type</div>
+		<div class="listItemBtDiv">
+			<button class="listItemInputBt">운동예약</button>
+			<button class="listItemRemoveBt">삭제</button>
+		</div>
+	</div>
+	<div class="slideListDivInput">
+		<form id="listSubmitForm" class="listSubmitForm">
+			<div class="datepicker">
+				<input type="text" class="routineDate" name="trip-start">
+				<input type="time" class="routineTime" name="routineTime" required>
+			</div>
+			<input type="text" id="routineInput" name="routineInput" placeholder="운동루틴을 입력하세요.">
+			<input type="submit" id="routineInputBt" class="routineInputBt" value="예약">
+			<input type="button" id="routineCancelBt" class="routineCancelBt" value="취소">
+		</form>
+		<div class="exRoutine">
+			<div class="exRoutineNameDiv">
+				<p class="exRoutineText">운동루틴 ex)</p>
+			</div>
+			<div class="exRoutineTextDiv">
+			</div>
+		</div>
+	</div>
+</li>-->
