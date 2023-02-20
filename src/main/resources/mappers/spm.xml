@@ -30,7 +30,11 @@
    <select id="spmDetail" parameterType="string" resultType="com.finalProject.project.model.spmVO">
 		SELECT*FROM supplements WHERE spmName=#{spmName}
 	</select>
-   
+   <!--    Ing spm page -->
+	<select id="inglistSpm" parameterType="string" resultMap="spmResult">
+		SELECT*FROM supplements WHERE spmIngCtg=#{spmIngCtg}
+		ORDER BY spmName
+	</select>
    <update id="savespmList" parameterType="hashmap" >
     INSERT IGNORE INTO spmlist(memId, spmName)
     VALUES(#{memId},#{spmName}); 
