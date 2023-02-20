@@ -92,8 +92,8 @@
     SET routineCount = routineCount+1
     WHERE routineNo = #{routineNo}
   </update>
-  <select id="detailViewRoot" parameterType="String" resultType="String">
-    SELECT routineNo
+  <select id="detailViewRoot" parameterType="String" resultType="hashmap">
+    SELECT routineNo, routineName
     FROM detailInfo
     WHERE routineName = #{routineName}
   </select>

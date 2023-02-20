@@ -15,6 +15,6 @@ public interface IExerciseInfoDAO {
     public void viewsExercise(String routineNo); // 조회수 카운트
     public int saveMyList(HashMap<String,Object> map);
     public void saveListCount(String routineNo);
-    public String detailViewRoot(String routineName);
+    public HashMap<String,Object> detailViewRoot(String routineName);
 
 }

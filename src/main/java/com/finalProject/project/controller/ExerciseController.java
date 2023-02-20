@@ -86,7 +86,7 @@ public class ExerciseController {
 										@PathVariable ("pNum") String pNum,Model model,
 										HttpServletRequest request, HttpServletResponse response) {
 		ExerciseInfoVO routine = service.detailViewRoutineInfo(routineNo);
-		ArrayList<String> rootList = new ArrayList<String>();
+		ArrayList<HashMap<String,Object>> rootList = new ArrayList<HashMap<String,Object>>();
 		String routineName = "";
 		for(int i = 0; i < 3; i++){
 			if(i == 0){

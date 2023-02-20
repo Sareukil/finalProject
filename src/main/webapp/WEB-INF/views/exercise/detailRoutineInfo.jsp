@@ -75,16 +75,11 @@
 						<div id="contents1_3" class="content1">
 							<h3>다른 추천 운동</h3>
 							<form>
+								<c:forEach var='rootList' items="${rootList}">
 								<input type="submit" id="recExercise1" class="routineBtn"
-									value="#${routine.recExercise1}"
-									formaction="/exercise/detailViewRoutineInfo/${rootList[0].routineNo}/>">
-								<input type="submit" id="recExercise1-1" class="routineBtn"
-									value="#${routine.recExercise2}"
-									formaction="/exercise/detailViewRoutineInfo/${rootList[1].routineNo}">
-									<input type="submit" id="recExercise1-2" class="routineBtn"
-									value="#${routine.recExercise3}"
-									formaction="/exercise/detailViewRoutineInfo/${rootList[2].routineNo}">
-
+									value="#${rootList.routineName}"
+									formaction="/exercise/detailViewRoutineInfo/${rootList.routineNo}/>">
+								</c:forEach>
 							</form>
 						</div>
 					</article>

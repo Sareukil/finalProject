@@ -64,7 +64,7 @@ public class ExerciseInfoService implements IExerciseInfoService {
     }
 
     @Override
-    public String detailViewRoot(String routineName) {
+    public HashMap<String,Object> detailViewRoot(String routineName) {
        
         return dao.detailViewRoot(routineName);
     }
