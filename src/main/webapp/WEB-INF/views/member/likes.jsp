@@ -17,10 +17,74 @@
 	const listScrollWidth = list.scrollWidth;
 	const listClientWidth = list.clientWidth;
 	// 이벤트마다 갱신될 값
-	let startX = 0;
-	let nowX = 0;
-	let endX = 0;
-	let listX = 0;
+	let startY = 0;
+	let nowY = 0;
+	let endY = 0;
+	let listY = 0;
+
+
+	const getClientY = (e) => {
+	const isTouches = e.touches ? true : false;
+	return isTouches ? e.touches[0].clientY : e.clientY;
+	};
+
+	const getTranslateY = () => {
+	return parseInt(getComputedStyle(list).transform.split(/[^\-0-9]+/g)[5]);
+	};
+
+	const setTranslateY = (y) => {
+	list.style.transform = `translateY(${y}px)`;
+	};
+	const bindEvents = () => {
+	list.addEventListener('mousedown', onScrollStart);
+	list.addEventListener('touchstart', onScrollStart);
+	list.addEventListener('click', onClick);
+	};
+	bindEvents();
+
+	const onScrollStart = (e) => {
+  	startY = getClientY(e);
+	window.addEventListener('mousemove', onScrollMove);
+	window.addEventListener('touchmove', onScrollMove);
+	window.addEventListener('mouseup', onScrollEnd);
+	window.addEventListener('touchend', onScrollEnd);
+	};
+	const onScrollMove = (e) => {
+	nowY = getClientY(e);
+	setTranslateY(listY + nowY - startY);
+	};
+
+	const onScrollEnd = (e) => {
+	endY = getClientY(e);
+	listY = getTranslateY();
+	if (listY > 0) {
+		setTranslateY(0);
+		list.style.transition = `all 0.3s ease`;
+		listY = 0;
+	} else if (listY < listClientWidth - listScrollWidth) {
+		setTranslateY(listClientWidth - listScrollWidth);
+		list.style.transition = `all 0.3s ease`;
+		listY = listClientWidth - listScrollWidth;
+	}
+
+	window.removeEventListener('mousedown', onScrollStart);
+	window.removeEventListener('touchstart', onScrollStart);
+	window.removeEventListener('mousemove', onScrollMove);
+	window.removeEventListener('touchmove', onScrollMove);
+	window.removeEventListener('mouseup', onScrollEnd);
+	window.removeEventListener('touchend', onScrollEnd);
+	window.removeEventListener('click', onClick);
+
+	setTimeout(() => {
+		bindEvents();
+		list.style.transition = '';
+	}, 300);
+	};
+	const onClick = (e) => {
+	if (startY - endY !== 0) {
+		e.preventDefault();
+	}
+	};
 	window.scrollTo(0, 0);
 	 $(document).ready(function(){
 
