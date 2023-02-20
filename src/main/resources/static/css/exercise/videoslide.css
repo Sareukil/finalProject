@@ -8,7 +8,7 @@
 }
 
 #listSlider1{
-	width: 60%;
+	width: 80%;
 }
 
 .listSlider {
@@ -18,9 +18,8 @@
 }
 
 .viewportList {
-    margin: 1% 0px;
-    height: 92%;
-    width: 90%;
+    margin-top: 20px;
+    width: 100%;
     overflow: hidden;
   }
 
