@@ -59,13 +59,13 @@
         
       </when>
       <when test="pNum != null and pNum == 2">
-        WHERE routineCategory = "#어깨 #목"
+        WHERE routineCategory = "#어깨 #상체"
       </when>
       <when test="pNum != null and pNum == 3">
         WHERE routineCategory = "#팔 #다리"
       </when>
       <when test="pNum != null and pNum == 4">
-        WHERE routineCategory = "#허리"
+        WHERE routineCategory = "#허리 #전신"
       </when>
     </choose>
     ORDER BY routineNo DESC LIMIT #{displayPost}, #{postNum};
