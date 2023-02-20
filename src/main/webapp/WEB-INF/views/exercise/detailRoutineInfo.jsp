@@ -77,13 +77,13 @@
 							<form>
 								<input type="submit" id="recExercise1" class="routineBtn"
 									value="#${routine.recExercise1}"
-									formaction="/exercise/detailViewRoutineInfo/1"> <input
-									type="submit" id="recExercise1-1" class="routineBtn"
+									formaction="/exercise/detailViewRoutineInfo/${rootList[0]/>">
+								<input type="submit" id="recExercise1-1" class="routineBtn"
 									value="#${routine.recExercise2}"
-									formaction="/exercise/detailViewRoutineInfo/2"> <input
-									type="submit" id="recExercise1-2" class="routineBtn"
+									formaction="/exercise/detailViewRoutineInfo/${rootList[1]">
+									<input type="submit" id="recExercise1-2" class="routineBtn"
 									value="#${routine.recExercise3}"
-									formaction="/exercise/detailViewRoutineInfo/3">
+									formaction="/exercise/detailViewRoutineInfo/${rootList[2]">
 
 							</form>
 						</div>

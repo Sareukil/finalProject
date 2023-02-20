@@ -58,16 +58,16 @@ $('.triggerList').on('click', function() {
 
 function exerciseRankList(pNum){
 	if(pNum == 1){
-		$('.weekRank').html("이번주 등 운동루틴 TOP5");
+		$('.weekRank').html("이번주 등/가슴 운동루틴 TOP5");
 	}
 	else if(pNum == 2){
-		$('.weekRank').html("이번주 어깨/목 운동루틴 TOP5");
+		$('.weekRank').html("이번주 어깨/상체 운동루틴 TOP5");
 	}
 	else if(pNum == 3){
 		$('.weekRank').html("이번주 팔/다리 운동루틴 TOP5");
 	}
 	else if(pNum == 4){
-		$('.weekRank').html("이번주 허리 운동루틴 TOP5");
+		$('.weekRank').html("이번주 허리/전신 운동루틴 TOP5");
 	}
 	else{
 

@@ -63,6 +63,12 @@ public class ExerciseInfoService implements IExerciseInfoService {
 
     }
 
+    @Override
+    public String detailViewRoot(String routineName) {
+       
+        return dao.detailViewRoot(routineName);
+    }
+
 
 
 

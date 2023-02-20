@@ -83,9 +83,23 @@ public class ExerciseController {
 	}
 	@RequestMapping("/exercise/detailViewRoutineInfo/{routineNo}")
 	public String detailViewRoutineInfo(@PathVariable ("routineNo") String routineNo,
-										Model model,
+										@PathVariable ("pNum") String pNum,Model model,
 										HttpServletRequest request, HttpServletResponse response) {
 		ExerciseInfoVO routine = service.detailViewRoutineInfo(routineNo);
+		ArrayList<String> rootList = new ArrayList<String>();
+		String routineName = "";
+		for(int i = 0; i< 3; i++){
+			if(i == 0){
+				routineName = routine.getRecExercise1();
+			}
+			else if(i ==1){
+				routineName = routine.getRecExercise2();
+			}
+			else{
+				routineName = routine.getRecExercise3();
+			}
+			rootList.add(service.detailViewRoot(routineName));
+		}
 		
 		Cookie oldCookie = null;
  		Cookie[] cookies = request.getCookies();
@@ -112,6 +126,7 @@ public class ExerciseController {
 			response.addCookie(newCookie);
 		}
 		model.addAttribute("routine", routine);
+		model.addAttribute("rootList", rootList);
 		return "exercise/detailRoutineInfo";
 	}
 	
