@@ -52,7 +52,7 @@
 			   	<a href="<c:url value='/supplements/spmDetail/${spm.spmName}' />">
 				   <div class="product-card">
 				   		<div class="product-tumb">
-				   			<img src="<c:url value='/images/${spm.spmImg }'/>">
+				   			<img src="<c:url value='/image/spm/${spm.spmImg }'/>">
 				   		</div>
 				   		<div class="product-details">
 				   			<h4><a href="<c:url value='/supplements/spmDetail/${spm.spmName}' />">${spm.spmName }</a></h4>

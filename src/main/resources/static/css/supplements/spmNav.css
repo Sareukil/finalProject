@@ -252,6 +252,7 @@ li.active.have-children span::after {
 
 /*--------------------------spmDetail-----------------------------*/
 
+
 .spmA{
 	color:black;
 }
@@ -260,22 +261,137 @@ li.active.have-children span::after {
   clip-path:url('#heart-path');
 }
 
-
-
 .icon{
   width:50px;
   height:50px;
   cursor:pointer;
   fill: #ccc;
-  
 }
-
 
 .icon:hover{
   fill: red;
 }
 
+.section1{
+	padding: 40px 0px 0px 0px;
+}
 
+.section{
+	width:1280px;
+	position:relative;
+}
+
+.spmprd .section1 .card-warp{
+	padding:60px 40px;
+}
+
+.section1 .card-warp{
+	position:relative;
+}
+
+.spmprd .card-warp{
+	width: 1280px;
+    padding: 30px 40px;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    border-radius: 20px;
+}
+
+
+.btn-heart{
+	border-radius:80px;
+	position:absolute;
+	top:30px;
+	right:30px;
+	width:180px;
+	background: #F4F2FF;
+}
+
+.section1 .spmInfo{
+	width:970px;
+	float:right;
+}
+
+.section1 .spmInfo .nameS{
+	font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    display: block;
+    color: #8760F4;
+    margin-top: 70px;
+}
+
+.section1 .spmInfo .effS{
+	margin-top:30px;
+	font-weight: 700;
+    font-size: 20px;
+    line-height: 70px;
+}
+.section1 .spmInfo .expS{
+	font-weight: 700;
+    font-size: 20px;
+    line-height: 70px;
+}
+<!--*****************section1-2********************-->
+.section1-2{
+	margin-top:80px;
+}
+
+.nIng-title{
+	font-weight: 700;
+    margin: 0px 0px 30px;
+    display: block;
+    font-size: 28px;
+    color: #101219;
+    line-height: 1;
+    text-align: left;
+}
+
+.card-wrap{
+	padding:10px 40px;
+}
+.spmprd .card-wrap{
+	width:1280px;
+	padding: 30px 40px;
+	padding-bottom:100px;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    border-radius: 20px;
+}
+.section1-2 .card-wrap .ntf .txt1{
+	margin-left: 40px;
+    display: block;
+    float: left;
+    font-weight: 700;
+    color: #101219;
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    font-size: 24px;
+}
+<!--*****************section1-3********************-->
+ .section1-3{
+	padding:80px 0px 0px 0px;
+}
+
+.oneD{
+	font-weight: 700;
+    margin: 0px 0px 30px;
+    display: block;
+    font-size: 28px;
+    color: #101219;
+    line-height: 1;
+    text-align: left;
+}
+
+.spmprd .card-od{
+	width:1280px;
+	padding: 30px 40px;
+	padding-bottom:100px;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    border-radius: 20px;
+}
 
 
 

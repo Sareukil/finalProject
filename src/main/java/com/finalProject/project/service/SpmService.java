@@ -36,6 +36,11 @@ public class SpmService implements ISpmService {
 		return dao.savespmList(map);
 	}
 
+	@Override
+	public ArrayList<spmVO> inglistSpm(String spmIngCtg) {
+		return dao.inglistSpm(spmIngCtg);
+	}
+	
 
 	}
 

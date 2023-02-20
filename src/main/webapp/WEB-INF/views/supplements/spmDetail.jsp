@@ -45,50 +45,89 @@
 				    </li>
 				  </ul>
 			</div>
-			<div class="spmprd" style="margin-top:20px;">
 			
-<!-- 				<div class="card-warp"> -->
-<%-- 					<img src="<c:url value='/images/${spm.spmImg}'/>" width="300" height="300"> --%>
-				
-<!-- 				</div> -->
+			<div class="spmprd" style="padding-bottom:50px;">
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			<table width="1280">
-					<tr><td rowspan="5" style=" text-align:center;">
-					<img src="<c:url value='/images/${spm.spmImg}'/>" width="300" height="300"></td></tr>
-					<tr><td>품명 </td><td style=" text-align:center;"> ${spm.spmName }</td></tr>
-					<tr><td>상세설명 </td><td style=" text-align:center;">${spm.spmExplain }</td></tr>
-					<tr><td>효과 </td><td style=" text-align:center;">${spm.spmEffect } </td></tr>
-					<tr><td colspan="2" style=" text-align:center;">
-						<c:if test="${empty sessionScope.sid }">
-								<button><a href="<c:url value='/member/loginForm' />">로그인</a></button>	
-						</c:if>		
+				<div class="section section1 section1-1" >
+					<div class="card-warp"  >
+						<img  src="<c:url value='/image/spm/${spm.spmImg}'/>" style="width:300px; height:300px; " >
+							
+							<div class="btn-heart">
+							<c:if test="${empty sessionScope.sid }">
+									<button><a href="<c:url value='/member/loginForm' />">로그인</a></button>	
+							</c:if>		
 					
 								<c:if test="${not empty sessionScope.sid }">
-									
 									<button id="likeBt"  >
 									<svg class="heart-icon icon" viewBox="0 0 512 512">
 									<rect width="512" height="512" />
 									</svg></button>
 									<input type="hidden" id="spmName"  value="${spm.spmName }" >
+								</c:if> 
+							</div>
+							
+							<div class="spmInfo">
+								<h1 class="nameS">${spm.spmName }</h1>
+								<div class="effS">${spm.spmEffect }</div>
+								<div class="expS">${spm.spmExplain }</div>
+							</div>
+					</div>
+				</div>
+				
+				<div class="section section1-2" style="padding-top:80px;">
+					<h2 class="nIng-title">※복용법 및 주의사항</h2>
+					<div class="card-wrap nt">
+						<div class="ntf">
+							<span class="txt1">${spm.spmNotIngred}</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="section section1-3" style="padding-top:80px;">
+					<h2 class="oneD">1일 함량 및 성분표</h2>
+					<div class="card-od">
+						<div class="cod">
+							<img src="<c:url value='/image/spm/${spm.spmIngred}'/>" width="800" >
+						</div>
+					</div>
+				</div>
+			
+			
+			
+			
+			
+			
+			
+			
+<!-- 			<table width="1280"> -->
+<!-- 					<tr><td rowspan="5" style=" text-align:center;"> -->
+<%-- 					<img src="<c:url value='/images/${spm.spmImg}'/>" width="300" height="300"></td></tr> --%>
+<%-- 					<tr><td>품명 </td><td style=" text-align:center;"> ${spm.spmName }</td></tr> --%>
+<%-- 					<tr><td>상세설명 </td><td style=" text-align:center;">${spm.spmExplain }</td></tr> --%>
+<%-- 					<tr><td>효과 </td><td style=" text-align:center;">${spm.spmEffect } </td></tr> --%>
+<!-- 					<tr><td colspan="2" style=" text-align:center;"> -->
+<%-- 						<c:if test="${empty sessionScope.sid }"> --%>
+<%-- 								<button><a href="<c:url value='/member/loginForm' />">로그인</a></button>	 --%>
+<%-- 						</c:if>		 --%>
+					
+<%-- 								<c:if test="${not empty sessionScope.sid }"> --%>
+									
+<!-- 									<button id="likeBt"  > -->
+<!-- 									<svg class="heart-icon icon" viewBox="0 0 512 512"> -->
+<!-- 									<rect width="512" height="512" /> -->
+<!-- 									</svg></button> -->
+<%-- 									<input type="hidden" id="spmName"  value="${spm.spmName }" > --%>
 									
 									
-								</c:if>
-								 </td>
-					</tr>
-				</table>
-				<br><br><br>
-				<table width="1280">
-					<tr><td>※주의사항 : ${spm.spmNotIngred}</td></tr>
-					<tr><td style=" text-align:center;"><img src="<c:url value='/images/${spm.spmIngred}'/>" width="500" ></td></tr>
-				</table>
+<%-- 								</c:if> --%>
+<!-- 								 </td> -->
+<!-- 					</tr> -->
+<!-- 				</table> -->
+<!-- 				<br><br><br> -->
+<!-- 				<table width="1280"> -->
+<%-- 					<tr><td>※주의사항 : ${spm.spmNotIngred}</td></tr> --%>
+<%-- 					<tr><td style=" text-align:center;"><img src="<c:url value='/images/${spm.spmIngred}'/>" width="500" ></td></tr> --%>
+<!-- 				</table> -->
 				</div>
 			</div>
 			</article>

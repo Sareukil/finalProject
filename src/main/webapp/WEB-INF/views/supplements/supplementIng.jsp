@@ -47,7 +47,7 @@
 				<br>
 				<hr>
 				<br>
-			   <c:forEach var="spm" items="${spmEffList }">
+			   <c:forEach var="spm" items="${spmIngList }">
 			   	<a href="<c:url value='/supplements/spmDetail/${spm.spmName}' />">
 				   <div class="product-card">
 				   		<div class="product-tumb">
