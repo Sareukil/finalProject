@@ -34,8 +34,9 @@ public class AIRestController {
 
 		// 1. 파일 저장 경로 설정 : C:/springWorkspace/upload
 		// 마지막에 / 있어야 함
-		String uploadPath = "C:/springWorkspace/upload/";
-
+		//String uploadPath = "C:/springWorkspace/upload/";
+		String uploadPath = "/usr/local/project/upload/";
+		
 		// 2. 원본 파일 이름 저장
 		String originalFileName = file.getOriginalFilename();
 		String filePathName = uploadPath + originalFileName;
