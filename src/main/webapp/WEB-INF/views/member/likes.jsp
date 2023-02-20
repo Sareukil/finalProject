@@ -13,7 +13,7 @@
 <script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 
 <script type="text/javascript">
-	const list = document.querySelector('.list');
+	/*const list = document.querySelector('.list');
 	const listScrollWidth = list.scrollWidth;
 	const listClientWidth = list.clientWidth;
 	// 이벤트마다 갱신될 값
@@ -84,7 +84,7 @@
 	if (startY - endY !== 0) {
 		e.preventDefault();
 	}
-	};
+	};*/
 	window.scrollTo(0, 0);
 	 $(document).ready(function(){
 
