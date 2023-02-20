@@ -83,7 +83,7 @@ public class ExerciseController {
 	}
 	@RequestMapping("/exercise/detailViewRoutineInfo/{routineNo}")
 	public String detailViewRoutineInfo(@PathVariable ("routineNo") String routineNo,
-										@PathVariable ("pNum") String pNum,Model model,
+										Model model,
 										HttpServletRequest request, HttpServletResponse response) {
 		ExerciseInfoVO routine = service.detailViewRoutineInfo(routineNo);
 		ArrayList<HashMap<String,Object>> rootList = new ArrayList<HashMap<String,Object>>();
