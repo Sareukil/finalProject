@@ -78,7 +78,7 @@
 								<c:forEach var='rootList' items="${rootList}">
 								<input type="submit" id="recExercise1" class="routineBtn"
 									value="#${rootList.routineName}"
-									formaction="/exercise/detailViewRoutineInfo/${rootList.routineNo}/>">
+									formaction="/exercise/detailViewRoutineInfo/${rootList.routineNo}">
 								</c:forEach>
 							</form>
 						</div>
