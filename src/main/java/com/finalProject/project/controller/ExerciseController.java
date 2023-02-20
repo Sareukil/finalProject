@@ -88,7 +88,7 @@ public class ExerciseController {
 		ExerciseInfoVO routine = service.detailViewRoutineInfo(routineNo);
 		ArrayList<String> rootList = new ArrayList<String>();
 		String routineName = "";
-		for(int i = 0; i< 3; i++){
+		for(int i = 0; i < 3; i++){
 			if(i == 0){
 				routineName = routine.getRecExercise1();
 			}
