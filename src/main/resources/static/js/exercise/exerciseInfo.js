@@ -109,6 +109,7 @@ function exerciseItemList(pNum,num){
 			let pageHtml = "";
 			console.log(result.exListI);
             $.each(result.exListI, function(k,v){
+				console.log(v);
                 html += '<div class="exItem"> ';
 				html += '<img class="itemImg" src="../../image/'+v.routineNo+'.png"><div class="itemImgName">';
 				html += '<div class="itemText"><p class="textName"><a href="/exercise/detailViewRoutineInfo/'+v.routineNo+'">'+v.routineName+'</a></p>';
