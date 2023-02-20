@@ -6,7 +6,6 @@
 <!--footer 코드 입니다.-->
 <footer>
 	<div id="footerImgBox">
-		<img src="">
 	</div>
 	<div id="footerLeftBox">
 		<div id="footerABox"><a href="#" id="footerAO">개인정보처리방침</a><hr/><a href="#" id="footerAT">후원 상담</a></div>

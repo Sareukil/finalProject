@@ -13,6 +13,14 @@
 <script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 
 <script type="text/javascript">
+	const list = document.querySelector('.list');
+	const listScrollWidth = list.scrollWidth;
+	const listClientWidth = list.clientWidth;
+	// 이벤트마다 갱신될 값
+	let startX = 0;
+	let nowX = 0;
+	let endX = 0;
+	let listX = 0;
 	window.scrollTo(0, 0);
 	 $(document).ready(function(){
 
@@ -56,7 +64,7 @@
 					<hr>
 					<div class="saveListDiv">
 						<div class="saveExerciseList"><div class=SE_text>운동</div>
-							<ul>
+							<ul class="list">
 								<c:forEach var='exList' items="${exList}">
 								<li>
 									<div class="exListCreateDate">${exList.routineCreateDate}</div>
@@ -71,9 +79,9 @@
 						</div>
 						
 						<div class="saveSupplementsList"><div class=SE_text>영양제</div>
-							<ul>
+							<ul class="list">
 								<c:forEach var='spList' items="${spList}">
-								<li>
+								<li >
 									
 									<div class="spListImgName">
 										<div class="supplementsCreateDate">${spList.spmCreateDate}</div>
