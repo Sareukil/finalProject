@@ -22,6 +22,11 @@ public class ExerciseInfoVO {
 	private String recExercise2;
 	private String recExercise3;
 
+	private int routineOxy;
+	private int routineMus;
+	private int routineVisit;
+	private int routineCount;
+
 
 	public String getExVideoNo() {
 		return this.exVideoNo;
@@ -158,5 +163,38 @@ public class ExerciseInfoVO {
 	public void setRecExercise3(String recExercise3) {
 		this.recExercise3 = recExercise3;
 	}
+
+	public int getRoutineOxy() {
+		return this.routineOxy;
+	}
+
+	public void setRoutineOxy(int routineOxy) {
+		this.routineOxy = routineOxy;
+	}
+
+	public int getRoutineMus() {
+		return this.routineMus;
+	}
+
+	public void setRoutineMus(int routineMus) {
+		this.routineMus = routineMus;
+	}
+
+	public int getRoutineVisit() {
+		return this.routineVisit;
+	}
+
+	public void setRoutineVisit(int routineVisit) {
+		this.routineVisit = routineVisit;
+	}
+
+	public int getRoutineCount() {
+		return this.routineCount;
+	}
+
+	public void setRoutineCount(int routineCount) {
+		this.routineCount = routineCount;
+	}
+
 	
 }
