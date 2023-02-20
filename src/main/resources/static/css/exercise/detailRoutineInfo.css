@@ -1,12 +1,19 @@
-
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
  *{
- margin: 0; 
- padding: 0; 
- list-style: none; 
- text-decoration: none;
+	font-family: 'OTWelcomeRA';
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	text-decoration: none;
 
  }
  div.slogan {
+	margin-top:3%;
     width: 100% !important;
     height: 250px;
     background: url(/image/exercise2.png) no-repeat 50% !important;
@@ -24,9 +31,12 @@
 	line-height:150px;
 	margin-top:20px;
 }
+h2{
+	font-size:30px;
+}
 
 p{
-	font-size:18px;
+	font-size:25px;
 	line-height:35px;
 }
 
@@ -68,6 +78,7 @@ button{
 	text-align: center; 
 	line-height: 50px; 
 	color: black;
+	font-size:20px;
 	}
 	
 .active{
@@ -87,10 +98,12 @@ button{
 	margin-bottom:30px;
 	border:1px solid #2b5580;
 	padding:20px;
+	font-size:22px;
 	}
 
 .routine-info{
     text-align: center;
+	margin-top:50px;
 }
 .routine-info div{
     width:100%;
@@ -126,5 +139,8 @@ input.routineBtn {
 
 .useVideo{margin-top:20px;}
 
-
+img{
+	width:330px;
+	height:330px;
+}
 

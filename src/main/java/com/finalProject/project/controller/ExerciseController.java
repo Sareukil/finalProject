@@ -41,7 +41,6 @@ public class ExerciseController {
 		JSONObject obj = new JSONObject();
 
 		obj.put("exListR", exList);
-		System.out.println(obj.toString());
 		return obj.toString();
 	}
 
@@ -66,7 +65,6 @@ public class ExerciseController {
 		obj.put("prev", page.getPrev());
 		obj.put("startPageNum", page.getStartPageNum());
 		obj.put("endPageNum", page.getEndPageNum());
-		System.out.println(obj.toString());
 		return obj.toString();
 	}
 
@@ -78,7 +76,6 @@ public class ExerciseController {
 		JSONObject obj = new JSONObject();
 
 		obj.put("exVideoList", exVideoList);
-		System.out.println(obj.toString());
 		return obj.toString();
 	}
 	@RequestMapping("/exercise/detailViewRoutineInfo/{routineNo}")

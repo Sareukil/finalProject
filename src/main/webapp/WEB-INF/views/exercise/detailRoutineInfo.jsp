@@ -22,8 +22,8 @@
 	</div>
 <section class="bgTop bgSub5 pc">
 	<div class="slogan">
-		<p class="a">운동정보</p>
-		<p class="b">부위별 추천 운동과 루틴을 통한 건강 관리!</p>
+		<p class="a">운동 상세정보</p>
+		<p class="b">운동방법과 주의사항 등 꼭 참고하기!</p>
 	</div>
 </section>
 	<div id="wrap-routine">
