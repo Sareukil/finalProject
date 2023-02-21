@@ -5,7 +5,7 @@
     font-style: normal;
 }
  *{
- font-family: 'OTWelcomeRA';
+ 
  margin: 0; 
  padding: 0; 
  list-style: none; 
@@ -13,6 +13,7 @@
 
  }
  div.slogan {
+ font-family: 'OTWelcomeRA';
  margin-top:3%;
     width: 100% !important;
     height: 250px;
@@ -20,11 +21,13 @@
     background-size: cover;
 }
 .b{
+	font-family: 'OTWelcomeRA';
 	color:white;
 	text-align:center;
 	font-size:25px;
 }
 .a{
+	font-family: 'OTWelcomeRA';
 	font-size:50px;
 	text-align:center;
 	color:white;
@@ -32,21 +35,25 @@
 	margin-top:20px;
 }
 h2{
+	font-family: 'OTWelcomeRA';
 	font-size:30px;
 }
 
 p{
+	font-family: 'OTWelcomeRA';
 	font-size:25px;
 	line-height:35px;
 }
 
 button{
+	font-family: 'OTWelcomeRA';
 	font-size:20px;
 	padding:5px;
 	cursor:pointer;
 }
  
 .tab1{
+	font-family: 'OTWelcomeRA';
 	margin:0 auto;
 	height: 150px; 
 	width: 1280px; 
@@ -58,6 +65,7 @@ button{
 	}
 	
 .flex1{
+	font-family: 'OTWelcomeRA';
 	height: 50px; 
 	width: 1321px; 
 	justify-content: space-between; 
@@ -71,6 +79,7 @@ button{
 	}
 
 .panel1{
+	font-family: 'OTWelcomeRA';
 	width: 24%; 
 	height: 50px; 
 	border:1px solid #2b5580;
@@ -82,16 +91,19 @@ button{
 	}
 	
 .active{
+	font-family: 'OTWelcomeRA';
 	background-color:#2b5580!important; 
 	color:white !important;
 	border-bottom:0;
 	}
 	
 .content1{
+	font-family: 'OTWelcomeRA';
 	display: none;
 	}
 	
 .on{
+	font-family: 'OTWelcomeRA';
 	margin: -10px auto;
 	display: block !important;
 	width:1280px;
@@ -102,10 +114,12 @@ button{
 	}
 
 .routine-info{
+	font-family: 'OTWelcomeRA';
     text-align: center;
     margin-top:50px;
 }
 .routine-info div{
+	font-family: 'OTWelcomeRA';
     width:100%;
     display:inline-block;
     text-align: left;
@@ -116,6 +130,7 @@ div.box-image{
 }
 
 div.detail-routine{
+	font-family: 'OTWelcomeRA';
 	width:980px;
 	margin:0 auto;
 	margin-top:30px;
@@ -123,10 +138,13 @@ div.detail-routine{
 	display:inline-block;
 }
 
-p{margin-bottom:10px;
+p{
+	font-family: 'OTWelcomeRA';
+	margin-bottom:10px;
 margin-top:10px;}
 
 input.routineBtn {
+	font-family: 'OTWelcomeRA';
 	border:1px solid black;
 	background-color:white;
 	border-radius:8px;
@@ -137,10 +155,12 @@ input.routineBtn {
 	font-size:20px;
 }
 
-.useVideo{margin-top:20px;}
+.useVideo{
+	margin-top:20px;}
 
 
 img{
 	width:330px;
 	height:330px;
 }
+
