@@ -134,24 +134,26 @@
 									<div class="exListCreateDate">${exList.routineCreateDate}</div>
 									<div class="exListImgName">
 										<img src="<c:url value='/image/${exList.routineNo}.png'/>">
-										<div class="exListName">${exList.routineName}</div>
+										<div class="exListName"><a class="textA" href="<c:url value='/exercise/detailViewRoutineInfo/${exList.routineNo}'/>">${exList.routineName}</a></div>
+										<input type="hidden" value="${exList.routineNo}">
+										<button onclick="location.href='/myPage/exList/delete/${exList.elNo}'">삭제</button>
 									</div>
 								</li>
 								</c:forEach>
 							</ul>
 
 						</div>
-						
+						<div class ="saveSupListDiv"></div>
 						<div class="saveSupplementsList"><div class=SE_text>영양제</div>
 							<ul class="list">
 								<c:forEach var='spList' items="${spList}">
 								<li >
-									
+									<div class="supplementsCreateDate">${spList.spmCreateDate}</div>
 									<div class="spListImgName">
-										<div class="supplementsCreateDate">${spList.spmCreateDate}</div>
-										 <img src="<c:url value='/image/${spList.spmImg}'/>">
-										<div class="supplementsName">${spList.spmName}</div>
-										
+										<img src="<c:url value='/image/spm/${spList.spmImg}'/>">
+										<div class="supplementsName"><a class="textA" href="<c:url value='/supplements/spmDetail/${spList.spmName}'/>">${spList.spmName}</a></div>
+										<div class="supplementsName"></div>
+										<button onclick="location.href='/myPage/spList/delete/${spList.spNo}'">삭제</button>
 									</div>
 								</li>
 								</c:forEach>

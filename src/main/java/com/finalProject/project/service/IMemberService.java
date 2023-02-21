@@ -19,7 +19,8 @@ public interface IMemberService {
 	public ArrayList<HashMap<String,Object>> exLikeList(String memId);
 	public ArrayList<HashMap<String,Object>> spLikeList(String memId);
 	
-	
+	public void deleteExList(HashMap<String, Object> map);
+	public void deleteSpList(HashMap<String, Object> map);
 
 	
 

@@ -63,7 +63,7 @@
 	public String loginCheck(@RequestParam HashMap<String, Object> param,
 												HttpSession session) {
 		// 로그인 체크 결과 
-		System.out.println("ddddd");
+		//System.out.println("ddddd");
 	String result = service.loginCheck(param); // result : "success" 또는 "fail"
 	
 	
@@ -155,7 +155,7 @@
 				vo.setMemId((String)session.getAttribute ("sid"));
 				service.updatemember(vo);
 			
-			System.out.println(vo.toString());
+			//System.out.println(vo.toString());
 				return "redirect:/member/myPage";
 			}
 			
@@ -234,6 +234,27 @@
 			model.addAttribute("spList", spList);
 			return "member/likes";
 		}
+		@RequestMapping("/myPage/exList/delete/{elNo}")
+	public String deleteexList(@PathVariable int elNo, HttpSession session) {
+
+		String memId = (String)session.getAttribute("sid");
+		HashMap<String,Object> map = new HashMap<String,Object>();
+		map.put("elNo",elNo);
+		map.put("memId",memId);
+		service.deleteExList(map);
+
+		return"redirect:/member/likes";
+	}
+	@RequestMapping("/myPage/spList/delete/{spNo}")
+	public String deletespList(@PathVariable int spNo, HttpSession session) {
+		String memId = (String)session.getAttribute("sid");
+		HashMap<String,Object> map = new HashMap<String,Object>();
+		map.put("spNo",spNo);
+		map.put("memId",memId);
+		service.deleteSpList(map);
+
+		return"redirect:/member/likes";
+	}
 					
 	}
 		

@@ -121,7 +121,14 @@ public class MemberService implements IMemberService {
 	}
 
 
-
+	@Override
+	public void deleteExList(HashMap<String, Object> map){
+		dao.deleteExList(map);
+	}
+	@Override
+	public void deleteSpList(HashMap<String, Object> map){
+		dao.deleteSpList(map);
+	}
 
 
 

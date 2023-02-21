@@ -63,14 +63,22 @@
     INNER JOIN detailInfo dinfo
     ON el.routineNo = dinfo.routineNo
     WHERE memId = #{memId}
+    order by el.elNo desc
 	</select>
 
   <select id="spLikeList" parameterType="String" resultType="hashmap">
-		SELECT sl.spNo, sl.spmCreateDate, sl.spmName, spms.spmName
+		SELECT sl.spNo, sl.spmCreateDate, sl.spmName, spms.spmName, spms.spmImg
     FROM spmlist sl
     INNER JOIN supplements spms
     ON sl.spmName = spms.spmName
     WHERE memId = #{memId}
+    order by sl.spNo desc
 	</select>
+  <delete id="deleteExList" parameterType="hashmap">
+		DELETE FROM exerciselist WHERE memId=#{memId} AND elNo = #{elNo}
+	</delete>
 
+  <delete id="deleteSpList" parameterType="hashmap">
+		DELETE FROM spmlist WHERE memId=#{memId} AND spNo = #{spNo}
+	</delete>
   </mapper>
