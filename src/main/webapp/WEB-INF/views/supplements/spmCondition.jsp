@@ -42,43 +42,54 @@
 			
 			<div class="spmprd">
 				<div class="totalSpm" style="margin-top:20px; color:black; font-size:25px;">
-						<h1>건강고민별</h1>
+						<h1>성분별</h1>
 					</div>
 					<br><hr><br>
 					
 					<div class="health-wrap" style="margin-top:30px;">
 					
-						<a href="<c:url value='/spm/spmlisti/omega'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/omega'/>" class="health-one omega"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">오메가-3</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/tvita'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/tvita'/>" class="health-one tvita"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">종합 비타민</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/lutein'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/lutein'/>" class="health-one lutein"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">루테인</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/mth'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/mth'/>" class="health-one mth"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">밀크씨쓸&실리마린</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/prov'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/prov'/>" class="health-one prov"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">프로바이오틱</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/lt'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/lt'/>" class="health-one lt"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">L-테아닌</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/cvita'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/cvita'/>" class="health-one cvita"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">비타민C</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/dvita'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/dvita'/>" class="health-one dvita"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">비타민D</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/coq'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/coq'/>" class="health-one coq"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">코큐텐</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/chr'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/chr'/>" class="health-one chr"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">크로뮴 피콜리네이트</span></div></a>
 						
-						<a href="<c:url value='/spm/spmlisti/msm'/>" class="health-one"><div class="itxt">
+						<a href="<c:url value='/spm/spmlisti/msm'/>" class="health-one msm"><div class="itxt">
+						<span class="icon"></span>
 						<span class="txt">msm</span></div></a>
 						
 					</div>

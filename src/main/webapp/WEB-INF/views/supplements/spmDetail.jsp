@@ -58,10 +58,7 @@
 							</c:if>		
 					
 								<c:if test="${not empty sessionScope.sid }">
-									<button id="likeBt"  >
-									<svg class="heart-icon icon" viewBox="0 0 512 512">
-									<rect width="512" height="512" />
-									</svg></button>
+									<button id="likeBt" >찜하기</button>
 									<input type="hidden" id="spmName"  value="${spm.spmName }" >
 								</c:if> 
 							</div>
