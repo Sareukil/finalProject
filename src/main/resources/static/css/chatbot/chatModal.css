@@ -30,7 +30,7 @@
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
-    top: 20%;
+    top: 10%;
   }
   .modal-dialog {
     background: #fefefe;
@@ -42,7 +42,7 @@
     left: 50%;
     top: -100%;
     z-index: 11;
-    width: 360px;
+    width: 450px;
     box-shadow:0 5px 10px rgba(0,0,0,0.3);
     -webkit-transform: translate(0, -500%);
     -ms-transform: translate(0, -500%);

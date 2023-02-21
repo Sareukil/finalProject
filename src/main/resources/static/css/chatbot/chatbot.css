@@ -2,7 +2,7 @@
 #chatHeader {padding: 10px 15px; border-bottom: 1px solid #95a6b4;}
 #btnClose {border: none; background: none; float: right;}
  
-#chatBox {height: 300px; width: 330px; overflow-y:scroll; padding:10px 15px;
+#chatBox {height: 500px; width: 420px; overflow-y:scroll; padding:10px 15px;
 	 background-image: url("../../image/chatbot/erwewr.png");} 	
 
 #message {width: 300px;}
@@ -10,7 +10,7 @@
 #btnSubmit {float: right; background:#eeeeee; height: 28px; padding-right:0;}
 
 .msgBox  span {padding:3px 5px; word-break:break-all; display:block;
-							 max-width:300px; margin-bottom: 10px; border-radius: 10px;}
+							 max-width:300px; border-radius: 10px;}
 
 /* 
 	word-break : 단어 분리 결정하여 줄 바꿈 처리
@@ -76,4 +76,12 @@
 	border-radius: 10px;
     border-color: #f5ff75;
     background-color: #f5ffb3;
+}
+
+#chatBox a{
+	color: black;
+	background-color: #b3f8ff;
+	border-radius: 10px;
+	float: left;
+    padding: 0px 1%;
 }
