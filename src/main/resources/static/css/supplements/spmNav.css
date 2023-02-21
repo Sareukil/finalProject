@@ -270,12 +270,12 @@ li.active.have-children span::after {
 }
 
 .health-wrap .tvita .itxt .icon {
-    background: url(/image/spm/tvita.png) center no-repeat;
+    background: url(/image/spm/tvita.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
 .health-wrap .lutein .itxt .icon {
-    background: url(/image/spm/lutein.png) center no-repeat;
+    background: url(/image/spm/lutein.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
@@ -285,17 +285,17 @@ li.active.have-children span::after {
 }
 
 .health-wrap .prov .itxt .icon {
-    background: url(/image/spm/prov.png) center no-repeat;
+    background: url(/image/spm/prov.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
 .health-wrap .lt .itxt .icon {
-    background: url(/image/spm/lt.png) center no-repeat;
+    background: url(/image/spm/lt.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
 .health-wrap .cvita .itxt .icon {
-    background: url(/image/spm/cvita.png) center no-repeat;
+    background: url(/image/spm/cvita.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
@@ -305,17 +305,17 @@ li.active.have-children span::after {
 }
 
 .health-wrap .coq .itxt .icon {
-    background: url(/image/spm/coq.png) center no-repeat;
+    background: url(/image/spm/coq.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
 .health-wrap .chr .itxt .icon {
-    background: url(/image/spm/chr.png) center no-repeat;
+    background: url(/image/spm/chr.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
 .health-wrap .msm .itxt .icon {
-    background: url(/image/spm/msm.png) center no-repeat;
+    background: url(/image/spm/msm.PNG) center no-repeat;
     background-size: 105px 105px;
 }
 
