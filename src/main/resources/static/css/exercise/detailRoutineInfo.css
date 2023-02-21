@@ -5,15 +5,15 @@
     font-style: normal;
 }
  *{
-	font-family: 'OTWelcomeRA';
-	margin: 0; 
-	padding: 0; 
-	list-style: none; 
-	text-decoration: none;
+ font-family: 'OTWelcomeRA';
+ margin: 0; 
+ padding: 0; 
+ list-style: none; 
+ text-decoration: none;
 
  }
  div.slogan {
-	margin-top:3%;
+ margin-top:3%;
     width: 100% !important;
     height: 250px;
     background: url(/image/exercise2.png) no-repeat 50% !important;
@@ -103,7 +103,7 @@ button{
 
 .routine-info{
     text-align: center;
-	margin-top:50px;
+    margin-top:50px;
 }
 .routine-info div{
     width:100%;
@@ -139,8 +139,8 @@ input.routineBtn {
 
 .useVideo{margin-top:20px;}
 
+
 img{
 	width:330px;
 	height:330px;
 }
-

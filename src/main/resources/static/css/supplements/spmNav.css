@@ -31,6 +31,7 @@
  	color:black;
  }
  
+ 
 .product-card {
 	width:500px;
     position: relative;
@@ -87,7 +88,7 @@
     border-radius: 15px;
 }
 
- 
+
  /*--------------------------leftwing---------------------------- */
  
 body {
@@ -183,6 +184,17 @@ li.active.have-children span::after {
     width: 100%;
 }
 
+.health-wrap .health-one .itxt2 {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 26px;
+    color: #101219;
+    text-align: center;
+    width: 100%;
+}
+
 .health-wrap .health-one .itxt .icon {
     width: 105px;
     height: 105px;
@@ -250,6 +262,65 @@ li.active.have-children span::after {
     background-size: 105px 105px;
 }
 
+
+
+.health-wrap .omega .itxt .icon {
+    background: url(/image/spm/omega3.jpg) center no-repeat;
+    background-size: 150px 105px;
+}
+
+.health-wrap .tvita .itxt .icon {
+    background: url(/image/spm/tvita.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .lutein .itxt .icon {
+    background: url(/image/spm/lutein.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .mth .itxt .icon {
+    background: url(/image/spm/mth.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .prov .itxt .icon {
+    background: url(/image/spm/prov.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .lt .itxt .icon {
+    background: url(/image/spm/lt.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .cvita .itxt .icon {
+    background: url(/image/spm/cvita.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .dvita .itxt .icon {
+    background: url(/image/spm/dvita.jpg) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .coq .itxt .icon {
+    background: url(/image/spm/coq.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .chr .itxt .icon {
+    background: url(/image/spm/chr.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+.health-wrap .msm .itxt .icon {
+    background: url(/image/spm/msm.png) center no-repeat;
+    background-size: 105px 105px;
+}
+
+
+
 /*--------------------------spmDetail-----------------------------*/
 
 
@@ -306,6 +377,11 @@ li.active.have-children span::after {
 	width:180px;
 	background: #F4F2FF;
 }
+ button{
+ 	font-weight: 700;
+    font-size: 20px;
+	border:none;
+}
 
 .section1 .spmInfo{
 	width:970px;
@@ -332,7 +408,7 @@ li.active.have-children span::after {
     font-size: 20px;
     line-height: 70px;
 }
-<!--*****************section1-2********************-->
+/******************section1-2*********************/
 .section1-2{
 	margin-top:80px;
 }
@@ -369,7 +445,7 @@ li.active.have-children span::after {
     text-align: left;
     font-size: 24px;
 }
-<!--*****************section1-3********************-->
+/******************section1-3*********************/
  .section1-3{
 	padding:80px 0px 0px 0px;
 }
