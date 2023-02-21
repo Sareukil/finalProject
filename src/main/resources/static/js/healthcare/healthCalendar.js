@@ -131,6 +131,23 @@ $(document).ready(function(){
             $('#slideListDiv'+thisId).css('visibility','hidden');
             $('#slideListDiv'+thisId).css('transition-duration','500ms');
             $('#slideListDiv'+thisId).children().children().css('transition-duration','500ms');
+
+            let boolDate = date.split('-');
+            let todayBool = new Date();
+            let todayBoolYear = todayBool.getFullYear();
+            let todayBoolMonth = todayBool.getMonth() + 1;
+            let todayBoolDate = todayBool.getDate();
+            if(boolDate[0] == Number(todayBoolYear)&& boolDate[1] == Number(todayBoolMonth) && boolDate[2] == Number(todayBoolDate)){
+                    
+                let html = "";
+                html+='<li id="topListNo'+routineNo+'">';
+                html+='<div>'+time+'</div>';
+                html+='<div>'+routineStr+'</div>';
+                html+='<div id="topMyListCk'+routineNo + '" style="color: rgb(100 100 100);">X</div>';
+                html+='</li>';
+                
+                $('#todayList').append(html);
+            }
             $('#date'+thisId).val("");
             $('#time'+thisId).val("");
             $('#routineText'+thisId).val("");
@@ -607,6 +624,7 @@ function topTodayList(date){
             $('#todayList').empty();
             let html = "";
             $.each(result.todayList, function(k,v){
+                console.log(v.myTime)
                 html+='<li id="topListNo'+v.elMyNo+'">';
                 html+='<div>'+v.myTime+'</div>';
                 html+='<div>'+v.myRoutine+'</div>';

@@ -205,20 +205,6 @@
 							</div>
 						</div>
 					</div>
-					<div id="graphBloodPressure" class="graphDiv">
-						<div id="imgHiddenDiv3" class="imgHiddenDiv">
-							<img src="<c:url value='/image/healthcare/blood.png'/>">
-							<p>혈압</p>
-						</div>
-						<div id="graphBloodPressureHiddenDiv" class="graphHiddenDiv">
-							<img class="graphImg" src="<c:url value='/image/healthcare/blood.png'/>">
-							<p id="graphName3" class="graphName">혈압</p>
-							<hr id="healHr3" class="healHr"/>
-							<div id="graphSize3" class="graphSize">
-								<canvas id="graphMath3" class="graphMath"></canvas>
-							</div>
-						</div>
-					</div>
 					<div id="graphBloodSugar" class="graphDiv">
 						<div id="imgHiddenDiv4" class="imgHiddenDiv">
 							<img src="<c:url value='/image/healthcare/sugarblood.png'/>">
@@ -233,6 +219,21 @@
 							</div>
 						</div>
 					</div>
+					<div id="graphBloodPressure" class="graphDiv">
+						<div id="imgHiddenDiv3" class="imgHiddenDiv">
+							<img src="<c:url value='/image/healthcare/blood.png'/>">
+							<p>혈압</p>
+						</div>
+						<div id="graphBloodPressureHiddenDiv" class="graphHiddenDiv">
+							<img class="graphImg" src="<c:url value='/image/healthcare/blood.png'/>">
+							<p id="graphName3" class="graphName">혈압</p>
+							<hr id="healHr3" class="healHr"/>
+							<div id="graphSize3" class="graphSize">
+								<canvas id="graphMath3" class="graphMath"></canvas>
+							</div>
+						</div>
+					</div>
+					
 				</article>
 				<div class="calendar">
 					<div id="calendarDiv">

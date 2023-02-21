@@ -41,7 +41,7 @@
   </select>
 
   <select id="topTodayList" parameterType="hashmap" resultType="hashmap">
-    SELECT DATE_FORMAT(myRoutineDate,'%h:%i') myTime, myRoutine, routineCK, elMyNo
+    SELECT DATE_FORMAT(myRoutineDate,'%H:%i') myTime, myRoutine, routineCK, elMyNo
     FROM exercisemylist
     WHERE memId = #{memId} and Date(myRoutineDate) like CONCAT(#{date},'%')
   </select>

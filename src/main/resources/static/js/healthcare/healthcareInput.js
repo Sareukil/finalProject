@@ -10,9 +10,10 @@ $(document).ready(function(){
     BPMatch(bpM1, bpM2);
     // 체중, bmi
     let wAjaxRt = graphWeightAjax();
-    
-    let wLabels = wAjaxRt[0];
-    let wMyData = wAjaxRt[1];
+    let wLabels = [];
+    let wMyData = [];
+    wLabels = wAjaxRt[0];
+    wMyData = wAjaxRt[1];
     
     // 혈당
     let BSReturn =graphBSAjax();
@@ -75,7 +76,7 @@ $(document).ready(function(){
 
         }
         else{
-            if(myChart2){
+            if(myChart2 != null){
                 myChart2.data.datasets[0].data = bmiData;
                 myChart2.update();
             }
@@ -107,19 +108,24 @@ $(document).ready(function(){
             alert("키를 입력해주세요.");
         }
         else{
-
-            if(myChart1 && myChart2){
-                let wDataSet = graphWMatch(hcdValue,wLabels,wMyData);
+            let wDataSet = graphWMatch(hcdValue,wLabels,wMyData);
+            let bmiData = graphBMIMatch(wMyData);
+            console.log(bmiData)
+            if(myChart1 == null && myChart2 == null){
+                graphMath1(wDataSet[0],wDataSet[1])
+                graphMath2(wDataSet[0],bmiData)
+                //graphWeightAjax();
+            }
+            else{
+                
+                
                 myChart1.data.labels = wDataSet[0];
                 myChart1.data.datasets[0].data = wDataSet[1];
                 myChart1.update();
         
-                let bmiData = graphBMIMatch(wMyData);
+                
                 myChart2.data.datasets[0].data = bmiData;
                 myChart2.update();
-            }
-            else{
-                graphWeightAjax();
             }
             
         }
@@ -142,13 +148,13 @@ $(document).ready(function(){
         bsM = $('#BSText').html();
         BSMatch(bsM);
         let bsDataSet = graphBSMatch(hcdValue,BSLabels,BSData);
-        if(myChart4){
+        if(myChart4 != null){
             myChart4.data.labels = bsDataSet[0];
             myChart4.data.datasets[0].data = bsDataSet[1];
             myChart4.update();
         }
         else{
-            graphBSAjax();
+            graphMath4(bsDataSet[0],bsDataSet[1]);
         }
         
        }
@@ -174,14 +180,14 @@ $(document).ready(function(){
         BPMatch(bpM1, bpM2);
 
         let bpDataSet = graphBPMatch(hcdValue1,hcdValue2,BPLabels,BPData1,BPData2);
-        if(myChart3){
+        if(myChart3 !=null){
             myChart3.data.labels = bpDataSet[0];
             myChart3.data.datasets[0].data = bpDataSet[2];
             myChart3.data.datasets[1].data = bpDataSet[1];
             myChart3.update();
         }
         else{
-            graphBPAjax();
+            graphMath3(bpDataSet[0],bpDataSet[2],bpDataSet[1]);
         }
        }
     });
