@@ -399,7 +399,7 @@ function removeAllChildNods(el) {
 
 	<div class="image3">
 		<div class="footer_box">
-			주소 : 서울 특별시 서초구</br> 대표자 : 박정훈</br> 전화번호 : 02-000-0000</br> COPYRIGHT © 2023 나도
+			주소 : 서울 특별시 서초구</br> 대표자 : 박정훈</br> 전화번호 : 02-1111-2222</br> COPYRIGHT © 2023 나도
 			젊어봤다. ALL RIGHTS RESERVED. CREATED BY 이조판서</br>
 		</div>
 	</div>
