@@ -85,13 +85,14 @@
 		e.preventDefault();
 	}
 	};*/
+	/*
 	window.scrollTo(0, 0);
 	 $(document).ready(function(){
 
 		$(".saveExerciseList").click(function() {
   		$("html, body").animate({ scrollTop: 0 }, "slow");
   		return false;
-	 })
+	 })*/
 		
 });
 </script>
@@ -134,6 +135,7 @@
 									<div class="exListCreateDate">${exList.routineCreateDate}</div>
 									<div class="exListImgName">
 										<img src="<c:url value='/image/${exList.routineNo}.png'/>">
+
 										<div class="exListName"><a class="textA" href="<c:url value='/exercise/detailViewRoutineInfo/${exList.routineNo}'/>">${exList.routineName}</a></div>
 										<input type="hidden" value="${exList.routineNo}">
 										<button onclick="location.href='/myPage/exList/delete/${exList.elNo}'">삭제</button>

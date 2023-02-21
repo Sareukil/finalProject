@@ -131,7 +131,7 @@ public class ExerciseController {
 	@RequestMapping("/exercise/detailViewRoutineInfo/like")
 	public String detailViewRoutineInfoLike(@RequestParam String routineNo,
 										Model model, HttpSession session) {
-		System.out.println(routineNo);
+		//System.out.println(routineNo);
 		String memId = (String)session.getAttribute("sid");
 		HashMap<String,Object> map = new HashMap<String,Object>();
 		map.put("routineNo", routineNo);
